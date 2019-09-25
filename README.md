@@ -27,7 +27,7 @@ GO111MODULE=on go run main.go
 ### step 1
 
 ```shell
-git clone https://github.com/GoAdminGroup/example.git
+cd $GOPATH && git clone https://github.com/GoAdminGroup/example.git
 ```
 
 ### step 2
