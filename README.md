@@ -1,8 +1,8 @@
 # go-admin example
 
-a example show how to run go-admin.
+A example show how to run go-admin. Just for reference, [here](http://www.go-admin.cn/en) to know more.
 
-一个运行go-admin的例子。
+一个运行go-admin的例子。仅供参考，在[这里](http://www.go-admin.cn)了解更多。
 
 Following two ways to run the code.
 
