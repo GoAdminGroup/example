@@ -5,7 +5,7 @@ a example show how to run go-admin
 ## step 1
 
 ```shell
-git clone https://github.com/chenhg5/example.git
+git clone https://github.com/GoAdminGroup/example.git
 ```
 
 ## step 2
