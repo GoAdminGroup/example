@@ -45,13 +45,13 @@ govendor sync
 
 下载完解压到项目文件夹即可。
 
-visit: [http://localhost:9033/admin](http://localhost:9033/admin)
-
 ### step 3
 
 ```shell
 go run main.go
 ```
+
+visit: [http://localhost:9033/admin](http://localhost:9033/admin)
 
 ## use docker 使用docker
 
