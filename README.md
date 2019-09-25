@@ -34,6 +34,7 @@ cd $GOPATH && git clone https://github.com/GoAdminGroup/example.git
 
 ```shell
 go get github.com/kardianos/govendor
+cd $GOPATH/example
 govendor sync
 ```
 
