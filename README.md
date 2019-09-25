@@ -8,7 +8,7 @@ Following two ways to run the code.
 
 以下两种方法。建议go版本大于1.11使用模块加载，同时设置环境变量```GOPROXY=http://goproxy.cn```，版本低于1.11的盆友使用第二种方法。
 
-## use go module 使用模块加载依赖
+## Way 1: use go module 使用模块加载依赖
 
 ### step 1
 
@@ -22,7 +22,7 @@ git clone https://github.com/GoAdminGroup/example.git
 GO111MODULE=on go run main.go
 ```
 
-## use gopath 使用GOPATH加载依赖
+## Way 2: use gopath 使用GOPATH加载依赖
 
 ### step 1
 
