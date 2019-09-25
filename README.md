@@ -58,7 +58,7 @@ go run main.go
 ### step 1
 
 ```shell
-cd $GOPATH && git clone https://github.com/GoAdminGroup/example.git
+git clone https://github.com/GoAdminGroup/example.git
 ```
 
 ### step 2
