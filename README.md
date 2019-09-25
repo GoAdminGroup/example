@@ -37,7 +37,7 @@ go get github.com/kardianos/govendor
 govendor sync
 ```
 
-如果你在中国，用以上步骤进行下载安装依赖有问题，那么你可以直接从这里下载：[vendor.zip](https://gitee.com/cg33/go-admin/attach_files/279551/download)
+如果你在中国，因为各种原因导致用以上步骤进行下载安装依赖有问题，那么你可以直接从这里下载：[vendor.zip](https://gitee.com/cg33/go-admin/attach_files/279551/download)
 
 下载完解压到项目文件夹即可。
 
