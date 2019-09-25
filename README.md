@@ -4,9 +4,9 @@ A example show how to run go-admin. Just for reference, [here](http://www.go-adm
 
 一个运行go-admin的例子。仅供参考，在[这里](http://www.go-admin.cn)了解更多。
 
-Following two ways to run the code.
+Following three ways to run the code.
 
-以下两种方法。建议go版本大于1.11使用模块加载，同时设置环境变量```GOPROXY=http://goproxy.cn```，版本低于1.11的盆友使用第二种方法。
+以下三种方法。建议go版本大于1.11使用模块加载，同时设置环境变量```GOPROXY=http://goproxy.cn```，版本低于1.11的盆友使用第二种方法。如果本机没有golang环境，可以使用docker。
 
 ## use go module 使用模块加载依赖
 
@@ -19,8 +19,11 @@ git clone https://github.com/GoAdminGroup/example.git
 ### step 2
 
 ```shell
+cd example
 GO111MODULE=on go run main.go
 ```
+
+visit: [http://localhost:9033/admin](http://localhost:9033/admin)
 
 ## use gopath 使用GOPATH加载依赖
 
@@ -42,9 +45,33 @@ govendor sync
 
 下载完解压到项目文件夹即可。
 
+visit: [http://localhost:9033/admin](http://localhost:9033/admin)
+
 ### step 3
 
 ```shell
 go run main.go
 ```
 
+## use docker 使用docker
+
+### step 1
+
+```shell
+cd $GOPATH && git clone https://github.com/GoAdminGroup/example.git
+```
+
+### step 2
+
+```shell
+cd example
+docker build -t go-admin-example .
+```
+
+### step 3
+
+```shell
+docker run -p 9033:9033 -it -d go-admin-example /bin/bash -c "cd /go/src/app && GOPROXY=http://goproxy.cn GO111MODULE=on go run main.go"
+```
+
+visit: [http://localhost:9033/admin](http://localhost:9033/admin)
