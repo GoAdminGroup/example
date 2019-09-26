@@ -32,6 +32,31 @@ func main() {
 
 	examplePlugin := example.NewExample()
 
+	// you can also add config like:
+	//
+	// import "github.com/chenhg5/go-admin/modules/config""
+	//
+	// cfg := config.Config{
+	//	 Databases: config.DatabaseList{
+	//		"default": {
+	//			Host:       "127.0.0.1",
+	//			Port:       "3306",
+	//			User:       "root",
+	//			Pwd:        "root",
+	//			Name:       "godmin",
+	//			MaxIdleCon: 50,
+	//			MaxOpenCon: 150,
+	//			Driver:     db.DriverMysql,
+	//		},
+	//	},
+	//	UrlPrefix: "admin",
+	//	IndexUrl:  "/",
+	//	Debug:     true,
+	//	Language:  language.CN,
+	// }
+	//
+	// eng.AddConfig(cfg)
+
 	if err := eng.AddConfigFromJson("./config.json").
 		AddPlugins(adminPlugin, examplePlugin).
 		Use(r); err != nil {
@@ -41,6 +66,7 @@ func main() {
 	r.Static("/uploads", "./uploads")
 
 	// customize your pages
+	// http://localhost:9033/admin/custom
 
 	r.GET("/admin/custom", func(ctx *gin.Context) {
 		engine.Content(ctx, func() types.Panel {

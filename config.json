@@ -7,7 +7,6 @@
       "driver": "sqlite"
     }
   },
-  "domain": "localhost",
   "prefix": "admin",
   "store": {
     "path": "./uploads",
