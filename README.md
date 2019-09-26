@@ -30,14 +30,14 @@ visit: [http://localhost:9033/admin](http://localhost:9033/admin)
 ### step 1
 
 ```shell
-cd $GOPATH && git clone https://github.com/GoAdminGroup/example.git
+git clone https://github.com/GoAdminGroup/example.git
 ```
 
 ### step 2
 
 ```shell
 go get github.com/kardianos/govendor
-cd $GOPATH/example
+cd example
 govendor sync
 ```
 
