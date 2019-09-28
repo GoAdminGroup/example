@@ -12,261 +12,231 @@
 			"checksumSHA1": "ZVGYtogdvNDcijAyutpkqPdQv6k=",
 			"origin": "github.com/chenhg5/go-admin/vendor/github.com/360EntSecGroup-Skylar/excelize",
 			"path": "github.com/360EntSecGroup-Skylar/excelize",
-			"revision": "0e6dc39b15ae2c03b72b28d37c0e3ef95eee31d9",
-			"revisionTime": "2019-09-26T04:01:55Z"
+			"revision": "7cc4a602de05ef82472c0b5c96cdde4c8e18489e",
+			"revisionTime": "2019-09-28T08:09:09Z"
 		},
 		{
 			"checksumSHA1": "TutUi6ni5EAQp5Gez9Vlb2wv0ww=",
 			"origin": "github.com/chenhg5/go-admin/vendor/github.com/NebulousLabs/fastrand",
 			"path": "github.com/NebulousLabs/fastrand",
-			"revision": "0e6dc39b15ae2c03b72b28d37c0e3ef95eee31d9",
-			"revisionTime": "2019-09-26T04:01:55Z"
+			"revision": "7cc4a602de05ef82472c0b5c96cdde4c8e18489e",
+			"revisionTime": "2019-09-28T08:09:09Z"
 		},
 		{
 			"checksumSHA1": "ifXoeE71/p/9wo5yG65/RvOykhw=",
 			"path": "github.com/chenhg5/go-admin/adapter",
-			"revision": "0e6dc39b15ae2c03b72b28d37c0e3ef95eee31d9",
-			"revisionTime": "2019-09-26T04:01:55Z"
+			"revision": "7cc4a602de05ef82472c0b5c96cdde4c8e18489e",
+			"revisionTime": "2019-09-28T08:09:09Z"
 		},
 		{
-			"checksumSHA1": "sczhlbkt9IXIlrskA0PIJHaiSBk=",
+			"checksumSHA1": "bziTmKqDi+qWGYPS4tflJQq308M=",
 			"path": "github.com/chenhg5/go-admin/adapter/gin",
-			"revision": "0e6dc39b15ae2c03b72b28d37c0e3ef95eee31d9",
-			"revisionTime": "2019-09-26T04:01:55Z"
+			"revision": "7cc4a602de05ef82472c0b5c96cdde4c8e18489e",
+			"revisionTime": "2019-09-28T08:09:09Z"
 		},
 		{
 			"checksumSHA1": "O5pAPcB+xuKp35JpN98QLPzHTdI=",
 			"path": "github.com/chenhg5/go-admin/context",
-			"revision": "0e6dc39b15ae2c03b72b28d37c0e3ef95eee31d9",
-			"revisionTime": "2019-09-26T04:01:55Z"
+			"revision": "7cc4a602de05ef82472c0b5c96cdde4c8e18489e",
+			"revisionTime": "2019-09-28T08:09:09Z"
 		},
 		{
 			"checksumSHA1": "Q/QJtiPsVU4V4e8o2KxohAe05Ic=",
 			"path": "github.com/chenhg5/go-admin/engine",
-			"revision": "0e6dc39b15ae2c03b72b28d37c0e3ef95eee31d9",
-			"revisionTime": "2019-09-26T04:01:55Z"
+			"revision": "7cc4a602de05ef82472c0b5c96cdde4c8e18489e",
+			"revisionTime": "2019-09-28T08:09:09Z"
 		},
 		{
-			"checksumSHA1": "FGI62ldbGV9hWIpPXbm315luy6A=",
+			"checksumSHA1": "LtOa8V9Y+PLHXjtG0omUc2LjBqI=",
 			"path": "github.com/chenhg5/go-admin/examples/datamodel",
-			"revision": "0e6dc39b15ae2c03b72b28d37c0e3ef95eee31d9",
-			"revisionTime": "2019-09-26T04:01:55Z"
+			"revision": "7cc4a602de05ef82472c0b5c96cdde4c8e18489e",
+			"revisionTime": "2019-09-28T08:09:09Z"
 		},
 		{
-			"checksumSHA1": "clE0tsa+tvmbiMFn5IWasw9d4zg=",
+			"checksumSHA1": "m+TgNRvai+zEKYeCN7kBR/WAjEU=",
 			"path": "github.com/chenhg5/go-admin/modules/auth",
-			"revision": "0e6dc39b15ae2c03b72b28d37c0e3ef95eee31d9",
-			"revisionTime": "2019-09-26T04:01:55Z"
+			"revision": "7cc4a602de05ef82472c0b5c96cdde4c8e18489e",
+			"revisionTime": "2019-09-28T08:09:09Z"
 		},
 		{
-			"checksumSHA1": "hAKj+m1xpBlEnWQLYNvlBjQBmrY=",
+			"checksumSHA1": "03BK3N4P7P+nTncFweeeoWH8C6w=",
 			"path": "github.com/chenhg5/go-admin/modules/config",
-			"revision": "0e6dc39b15ae2c03b72b28d37c0e3ef95eee31d9",
-			"revisionTime": "2019-09-26T04:01:55Z"
+			"revision": "7cc4a602de05ef82472c0b5c96cdde4c8e18489e",
+			"revisionTime": "2019-09-28T08:09:09Z"
 		},
 		{
-			"checksumSHA1": "yrmdiG9HJh7Ii6MWm0tEsdKVaVs=",
+			"checksumSHA1": "aPN4xbsqvyEjbn2XS2/3QObPSiw=",
 			"path": "github.com/chenhg5/go-admin/modules/db",
-			"revision": "0e6dc39b15ae2c03b72b28d37c0e3ef95eee31d9",
-			"revisionTime": "2019-09-26T04:01:55Z"
-		},
-		{
-			"checksumSHA1": "3mLyPZTSuR2NZY98IfrUsCSNJQk=",
-			"path": "github.com/chenhg5/go-admin/modules/db/converter",
-			"revision": "0e6dc39b15ae2c03b72b28d37c0e3ef95eee31d9",
-			"revisionTime": "2019-09-26T04:01:55Z"
+			"revision": "7cc4a602de05ef82472c0b5c96cdde4c8e18489e",
+			"revisionTime": "2019-09-28T08:09:09Z"
 		},
 		{
 			"checksumSHA1": "8fjRn00rN+hQcLHdIRGLG5APBbY=",
 			"path": "github.com/chenhg5/go-admin/modules/db/dialect",
-			"revision": "0e6dc39b15ae2c03b72b28d37c0e3ef95eee31d9",
-			"revisionTime": "2019-09-26T04:01:55Z"
+			"revision": "7cc4a602de05ef82472c0b5c96cdde4c8e18489e",
+			"revisionTime": "2019-09-28T08:09:09Z"
 		},
 		{
-			"checksumSHA1": "AKVSf/tN6gWlyPwYbltKAfPq/LE=",
-			"path": "github.com/chenhg5/go-admin/modules/db/mssql",
-			"revision": "0e6dc39b15ae2c03b72b28d37c0e3ef95eee31d9",
-			"revisionTime": "2019-09-26T04:01:55Z"
-		},
-		{
-			"checksumSHA1": "JjpgOGeAFSPeNC/FGh7V6E5iv6Q=",
-			"path": "github.com/chenhg5/go-admin/modules/db/mysql",
-			"revision": "0e6dc39b15ae2c03b72b28d37c0e3ef95eee31d9",
-			"revisionTime": "2019-09-26T04:01:55Z"
-		},
-		{
-			"checksumSHA1": "M11gkRyy5klUlhZhruoxLNTWldE=",
-			"path": "github.com/chenhg5/go-admin/modules/db/performer",
-			"revision": "0e6dc39b15ae2c03b72b28d37c0e3ef95eee31d9",
-			"revisionTime": "2019-09-26T04:01:55Z"
-		},
-		{
-			"checksumSHA1": "vRCdpIPvIu1SxwM4xrtJyydUkzY=",
-			"path": "github.com/chenhg5/go-admin/modules/db/postgresql",
-			"revision": "0e6dc39b15ae2c03b72b28d37c0e3ef95eee31d9",
-			"revisionTime": "2019-09-26T04:01:55Z"
-		},
-		{
-			"checksumSHA1": "xtP7Llh+NdGyMnwNTUUe1AAHdMo=",
-			"path": "github.com/chenhg5/go-admin/modules/db/sqlite",
-			"revision": "0e6dc39b15ae2c03b72b28d37c0e3ef95eee31d9",
-			"revisionTime": "2019-09-26T04:01:55Z"
-		},
-		{
-			"checksumSHA1": "kGw/jGdxfCj+ear3rbWsHkpBzvU=",
+			"checksumSHA1": "23xQ8RIOGr789vG1w0M0zvYS7hs=",
 			"path": "github.com/chenhg5/go-admin/modules/language",
-			"revision": "0e6dc39b15ae2c03b72b28d37c0e3ef95eee31d9",
-			"revisionTime": "2019-09-26T04:01:55Z"
+			"revision": "7cc4a602de05ef82472c0b5c96cdde4c8e18489e",
+			"revisionTime": "2019-09-28T08:09:09Z"
 		},
 		{
 			"checksumSHA1": "6QTswjbI/XnhLry1lDFZNuJ9+s4=",
 			"path": "github.com/chenhg5/go-admin/modules/logger",
-			"revision": "0e6dc39b15ae2c03b72b28d37c0e3ef95eee31d9",
-			"revisionTime": "2019-09-26T04:01:55Z"
+			"revision": "7cc4a602de05ef82472c0b5c96cdde4c8e18489e",
+			"revisionTime": "2019-09-28T08:09:09Z"
 		},
 		{
 			"checksumSHA1": "5J1E1D6w9AjyISpaxF/ySDv+VoY=",
 			"path": "github.com/chenhg5/go-admin/modules/menu",
-			"revision": "0e6dc39b15ae2c03b72b28d37c0e3ef95eee31d9",
-			"revisionTime": "2019-09-26T04:01:55Z"
+			"revision": "7cc4a602de05ef82472c0b5c96cdde4c8e18489e",
+			"revisionTime": "2019-09-28T08:09:09Z"
 		},
 		{
-			"checksumSHA1": "anP3TNOoijqWaMDQEqTsAPTp9qs=",
+			"checksumSHA1": "dIil9PygorPW/1wQYwXYZNt4BwY=",
 			"path": "github.com/chenhg5/go-admin/modules/page",
-			"revision": "0e6dc39b15ae2c03b72b28d37c0e3ef95eee31d9",
-			"revisionTime": "2019-09-26T04:01:55Z"
+			"revision": "7cc4a602de05ef82472c0b5c96cdde4c8e18489e",
+			"revisionTime": "2019-09-28T08:09:09Z"
+		},
+		{
+			"checksumSHA1": "pdpBbMOUH46YPPUr/FPO4qJ6l6c=",
+			"path": "github.com/chenhg5/go-admin/modules/system",
+			"revision": "7cc4a602de05ef82472c0b5c96cdde4c8e18489e",
+			"revisionTime": "2019-09-28T08:09:09Z"
 		},
 		{
 			"checksumSHA1": "kXMQRc9wgFyywpGecuakb0kUB6A=",
 			"path": "github.com/chenhg5/go-admin/plugins",
-			"revision": "0e6dc39b15ae2c03b72b28d37c0e3ef95eee31d9",
-			"revisionTime": "2019-09-26T04:01:55Z"
+			"revision": "7cc4a602de05ef82472c0b5c96cdde4c8e18489e",
+			"revisionTime": "2019-09-28T08:09:09Z"
 		},
 		{
 			"checksumSHA1": "NsOB8u3Bg7vHq1m5pH6QwkYhIj4=",
 			"path": "github.com/chenhg5/go-admin/plugins/admin",
-			"revision": "0e6dc39b15ae2c03b72b28d37c0e3ef95eee31d9",
-			"revisionTime": "2019-09-26T04:01:55Z"
+			"revision": "7cc4a602de05ef82472c0b5c96cdde4c8e18489e",
+			"revisionTime": "2019-09-28T08:09:09Z"
 		},
 		{
-			"checksumSHA1": "IAvKlfl7V+4SU29F5WjfJFAgwgs=",
+			"checksumSHA1": "MuH6l2Gz9Paa+aKGmHGL4ePmiKI=",
 			"path": "github.com/chenhg5/go-admin/plugins/admin/controller",
-			"revision": "0e6dc39b15ae2c03b72b28d37c0e3ef95eee31d9",
-			"revisionTime": "2019-09-26T04:01:55Z"
+			"revision": "7cc4a602de05ef82472c0b5c96cdde4c8e18489e",
+			"revisionTime": "2019-09-28T08:09:09Z"
 		},
 		{
 			"checksumSHA1": "wjvjCOVtR1R26MPDuEaYTyb3t30=",
 			"path": "github.com/chenhg5/go-admin/plugins/admin/models",
-			"revision": "0e6dc39b15ae2c03b72b28d37c0e3ef95eee31d9",
-			"revisionTime": "2019-09-26T04:01:55Z"
+			"revision": "7cc4a602de05ef82472c0b5c96cdde4c8e18489e",
+			"revisionTime": "2019-09-28T08:09:09Z"
 		},
 		{
 			"checksumSHA1": "Z9pmPYCwi36Whwps+ZzYf+VPVtw=",
 			"path": "github.com/chenhg5/go-admin/plugins/admin/modules",
-			"revision": "0e6dc39b15ae2c03b72b28d37c0e3ef95eee31d9",
-			"revisionTime": "2019-09-26T04:01:55Z"
+			"revision": "7cc4a602de05ef82472c0b5c96cdde4c8e18489e",
+			"revisionTime": "2019-09-28T08:09:09Z"
 		},
 		{
 			"checksumSHA1": "9Z472xrjs7gU9BgtD+D7YeNVOfg=",
 			"path": "github.com/chenhg5/go-admin/plugins/admin/modules/constant",
-			"revision": "0e6dc39b15ae2c03b72b28d37c0e3ef95eee31d9",
-			"revisionTime": "2019-09-26T04:01:55Z"
+			"revision": "7cc4a602de05ef82472c0b5c96cdde4c8e18489e",
+			"revisionTime": "2019-09-28T08:09:09Z"
 		},
 		{
 			"checksumSHA1": "c0awqluyM47Pf1+AnPO11T5wDsU=",
 			"path": "github.com/chenhg5/go-admin/plugins/admin/modules/file",
-			"revision": "0e6dc39b15ae2c03b72b28d37c0e3ef95eee31d9",
-			"revisionTime": "2019-09-26T04:01:55Z"
+			"revision": "7cc4a602de05ef82472c0b5c96cdde4c8e18489e",
+			"revisionTime": "2019-09-28T08:09:09Z"
 		},
 		{
 			"checksumSHA1": "7Ca6zGP8s/6KTtlHGw5X4wbjYQI=",
 			"path": "github.com/chenhg5/go-admin/plugins/admin/modules/form",
-			"revision": "0e6dc39b15ae2c03b72b28d37c0e3ef95eee31d9",
-			"revisionTime": "2019-09-26T04:01:55Z"
+			"revision": "7cc4a602de05ef82472c0b5c96cdde4c8e18489e",
+			"revisionTime": "2019-09-28T08:09:09Z"
 		},
 		{
 			"checksumSHA1": "QGvczm5OCwcQjsrIwTjam4IeOwk=",
 			"path": "github.com/chenhg5/go-admin/plugins/admin/modules/guard",
-			"revision": "0e6dc39b15ae2c03b72b28d37c0e3ef95eee31d9",
-			"revisionTime": "2019-09-26T04:01:55Z"
+			"revision": "7cc4a602de05ef82472c0b5c96cdde4c8e18489e",
+			"revisionTime": "2019-09-28T08:09:09Z"
 		},
 		{
 			"checksumSHA1": "3HKeJB86dXzvWe+2vde7tO3Frr8=",
 			"path": "github.com/chenhg5/go-admin/plugins/admin/modules/paginator",
-			"revision": "0e6dc39b15ae2c03b72b28d37c0e3ef95eee31d9",
-			"revisionTime": "2019-09-26T04:01:55Z"
+			"revision": "7cc4a602de05ef82472c0b5c96cdde4c8e18489e",
+			"revisionTime": "2019-09-28T08:09:09Z"
 		},
 		{
 			"checksumSHA1": "kQdZ21J7XfviPRayxO5jpIxy8Oc=",
 			"path": "github.com/chenhg5/go-admin/plugins/admin/modules/parameter",
-			"revision": "0e6dc39b15ae2c03b72b28d37c0e3ef95eee31d9",
-			"revisionTime": "2019-09-26T04:01:55Z"
+			"revision": "7cc4a602de05ef82472c0b5c96cdde4c8e18489e",
+			"revisionTime": "2019-09-28T08:09:09Z"
 		},
 		{
 			"checksumSHA1": "6//q81XSk6tMW3C+TKM+mFK492Q=",
 			"path": "github.com/chenhg5/go-admin/plugins/admin/modules/response",
-			"revision": "0e6dc39b15ae2c03b72b28d37c0e3ef95eee31d9",
-			"revisionTime": "2019-09-26T04:01:55Z"
+			"revision": "7cc4a602de05ef82472c0b5c96cdde4c8e18489e",
+			"revisionTime": "2019-09-28T08:09:09Z"
 		},
 		{
-			"checksumSHA1": "WHHNcpSqgzGltTKGJiQ0AekMhro=",
+			"checksumSHA1": "tu+VrIp2unDmajQGxmgtqxa0NNU=",
 			"path": "github.com/chenhg5/go-admin/plugins/admin/modules/table",
-			"revision": "0e6dc39b15ae2c03b72b28d37c0e3ef95eee31d9",
-			"revisionTime": "2019-09-26T04:01:55Z"
+			"revision": "7cc4a602de05ef82472c0b5c96cdde4c8e18489e",
+			"revisionTime": "2019-09-28T08:09:09Z"
 		},
 		{
 			"checksumSHA1": "qSmzzmAi9LdjU5DcECZnsQFh+xs=",
 			"path": "github.com/chenhg5/go-admin/plugins/example",
-			"revision": "0e6dc39b15ae2c03b72b28d37c0e3ef95eee31d9",
-			"revisionTime": "2019-09-26T04:01:55Z"
+			"revision": "7cc4a602de05ef82472c0b5c96cdde4c8e18489e",
+			"revisionTime": "2019-09-28T08:09:09Z"
 		},
 		{
-			"checksumSHA1": "rx2PxhfwaD4JZ3bjpaaPxSIxuNc=",
+			"checksumSHA1": "eP8rQqwJLrHrY7WiPLXdIfFiias=",
 			"path": "github.com/chenhg5/go-admin/template",
-			"revision": "0e6dc39b15ae2c03b72b28d37c0e3ef95eee31d9",
-			"revisionTime": "2019-09-26T04:01:55Z"
+			"revision": "7cc4a602de05ef82472c0b5c96cdde4c8e18489e",
+			"revisionTime": "2019-09-28T08:09:09Z"
 		},
 		{
 			"checksumSHA1": "Ya/q1E/5JzFWkcLqo7F6zhQClTc=",
 			"path": "github.com/chenhg5/go-admin/template/adminlte",
-			"revision": "0e6dc39b15ae2c03b72b28d37c0e3ef95eee31d9",
-			"revisionTime": "2019-09-26T04:01:55Z"
+			"revision": "7cc4a602de05ef82472c0b5c96cdde4c8e18489e",
+			"revisionTime": "2019-09-28T08:09:09Z"
 		},
 		{
 			"checksumSHA1": "spO00brF7BB71uPpBW1K/+VaSnU=",
 			"path": "github.com/chenhg5/go-admin/template/adminlte/resource",
-			"revision": "0e6dc39b15ae2c03b72b28d37c0e3ef95eee31d9",
-			"revisionTime": "2019-09-26T04:01:55Z"
+			"revision": "7cc4a602de05ef82472c0b5c96cdde4c8e18489e",
+			"revisionTime": "2019-09-28T08:09:09Z"
 		},
 		{
-			"checksumSHA1": "2RPIJadqZgJfALIbOJ12iGGBoEE=",
+			"checksumSHA1": "wRtkQlbS/4tMFkBMlF9t4Co1FiM=",
 			"path": "github.com/chenhg5/go-admin/template/adminlte/tmpl",
-			"revision": "0e6dc39b15ae2c03b72b28d37c0e3ef95eee31d9",
-			"revisionTime": "2019-09-26T04:01:55Z"
+			"revision": "7cc4a602de05ef82472c0b5c96cdde4c8e18489e",
+			"revisionTime": "2019-09-28T08:09:09Z"
 		},
 		{
-			"checksumSHA1": "9xAoTZxda2CHDNkpyPMxVeG29yQ=",
+			"checksumSHA1": "R1Vq/mMGNvuVqetmUDRmOv8Qh3o=",
 			"path": "github.com/chenhg5/go-admin/template/components",
-			"revision": "0e6dc39b15ae2c03b72b28d37c0e3ef95eee31d9",
-			"revisionTime": "2019-09-26T04:01:55Z"
+			"revision": "7cc4a602de05ef82472c0b5c96cdde4c8e18489e",
+			"revisionTime": "2019-09-28T08:09:09Z"
 		},
 		{
 			"checksumSHA1": "yZiThQxBDDTqU6e5U/VAq6Pc0No=",
 			"path": "github.com/chenhg5/go-admin/template/login",
-			"revision": "0e6dc39b15ae2c03b72b28d37c0e3ef95eee31d9",
-			"revisionTime": "2019-09-26T04:01:55Z"
+			"revision": "7cc4a602de05ef82472c0b5c96cdde4c8e18489e",
+			"revisionTime": "2019-09-28T08:09:09Z"
 		},
 		{
-			"checksumSHA1": "fATuCYejgDYa+TJ7BjZFRiSxVI8=",
+			"checksumSHA1": "ZsQ7X8NW3LE2HHcxMlMaFMGEzcA=",
 			"path": "github.com/chenhg5/go-admin/template/types",
-			"revision": "0e6dc39b15ae2c03b72b28d37c0e3ef95eee31d9",
-			"revisionTime": "2019-09-26T04:01:55Z"
+			"revision": "7cc4a602de05ef82472c0b5c96cdde4c8e18489e",
+			"revisionTime": "2019-09-28T08:09:09Z"
 		},
 		{
 			"checksumSHA1": "2427GH6QIDPx60MN3HFvg4Z9BmA=",
 			"path": "github.com/chenhg5/go-admin/template/types/form",
-			"revision": "0e6dc39b15ae2c03b72b28d37c0e3ef95eee31d9",
-			"revisionTime": "2019-09-26T04:01:55Z"
+			"revision": "7cc4a602de05ef82472c0b5c96cdde4c8e18489e",
+			"revisionTime": "2019-09-28T08:09:09Z"
 		},
 		{
 			"checksumSHA1": "OcE/jbvEzkLl88hogGLj/RU68dc=",
@@ -332,8 +302,8 @@
 			"checksumSHA1": "Aulh7C5SVOA4Jzt5eHNH6197Mbk=",
 			"origin": "github.com/chenhg5/go-admin/vendor/github.com/konsorten/go-windows-terminal-sequences",
 			"path": "github.com/konsorten/go-windows-terminal-sequences",
-			"revision": "0e6dc39b15ae2c03b72b28d37c0e3ef95eee31d9",
-			"revisionTime": "2019-09-26T04:01:55Z"
+			"revision": "7cc4a602de05ef82472c0b5c96cdde4c8e18489e",
+			"revisionTime": "2019-09-28T08:09:09Z"
 		},
 		{
 			"checksumSHA1": "GKTFbGomCP1fhH7mFecvwKvh7bc=",
@@ -357,8 +327,8 @@
 			"checksumSHA1": "jRou8frV+eGk0Cj6benPsxoEDAc=",
 			"origin": "github.com/chenhg5/go-admin/vendor/github.com/mattn/go-colorable",
 			"path": "github.com/mattn/go-colorable",
-			"revision": "0e6dc39b15ae2c03b72b28d37c0e3ef95eee31d9",
-			"revisionTime": "2019-09-26T04:01:55Z"
+			"revision": "7cc4a602de05ef82472c0b5c96cdde4c8e18489e",
+			"revisionTime": "2019-09-28T08:09:09Z"
 		},
 		{
 			"checksumSHA1": "GiVgQkx5acnq+JZtYiuHPlhHoso=",
@@ -376,8 +346,8 @@
 			"checksumSHA1": "CIK3BBNX3nuUQCmNqTQydNfMNKI=",
 			"origin": "github.com/chenhg5/go-admin/vendor/github.com/mgutz/ansi",
 			"path": "github.com/mgutz/ansi",
-			"revision": "0e6dc39b15ae2c03b72b28d37c0e3ef95eee31d9",
-			"revisionTime": "2019-09-26T04:01:55Z"
+			"revision": "7cc4a602de05ef82472c0b5c96cdde4c8e18489e",
+			"revisionTime": "2019-09-28T08:09:09Z"
 		},
 		{
 			"checksumSHA1": "ZTcgWKWHsrX0RXYVXn5Xeb8Q0go=",
@@ -395,15 +365,15 @@
 			"checksumSHA1": "2jsbDTvwxafPp7FJjJ8IIFlTLjs=",
 			"origin": "github.com/chenhg5/go-admin/vendor/github.com/mohae/deepcopy",
 			"path": "github.com/mohae/deepcopy",
-			"revision": "0e6dc39b15ae2c03b72b28d37c0e3ef95eee31d9",
-			"revisionTime": "2019-09-26T04:01:55Z"
+			"revision": "7cc4a602de05ef82472c0b5c96cdde4c8e18489e",
+			"revisionTime": "2019-09-28T08:09:09Z"
 		},
 		{
 			"checksumSHA1": "SVO+Zm6SNwWrpgyc6mcTXbH4aJ8=",
 			"origin": "github.com/chenhg5/go-admin/vendor/github.com/sirupsen/logrus",
 			"path": "github.com/sirupsen/logrus",
-			"revision": "0e6dc39b15ae2c03b72b28d37c0e3ef95eee31d9",
-			"revisionTime": "2019-09-26T04:01:55Z"
+			"revision": "7cc4a602de05ef82472c0b5c96cdde4c8e18489e",
+			"revisionTime": "2019-09-28T08:09:09Z"
 		},
 		{
 			"checksumSHA1": "z1jqX/kf16YO8Rd7bCtY+p4+TEs=",
@@ -415,8 +385,8 @@
 			"checksumSHA1": "oCH3J96RWvO8W4xjix47PModpio=",
 			"origin": "github.com/chenhg5/go-admin/vendor/golang.org/x/crypto/bcrypt",
 			"path": "golang.org/x/crypto/bcrypt",
-			"revision": "0e6dc39b15ae2c03b72b28d37c0e3ef95eee31d9",
-			"revisionTime": "2019-09-26T04:01:55Z"
+			"revision": "7cc4a602de05ef82472c0b5c96cdde4c8e18489e",
+			"revisionTime": "2019-09-28T08:09:09Z"
 		},
 		{
 			"checksumSHA1": "ejjxT0+wDWWncfh0Rt3lSH4IbXQ=",
@@ -428,8 +398,8 @@
 			"checksumSHA1": "oVPHWesOmZ02vLq2fglGvf+AMgk=",
 			"origin": "github.com/chenhg5/go-admin/vendor/golang.org/x/crypto/blowfish",
 			"path": "golang.org/x/crypto/blowfish",
-			"revision": "0e6dc39b15ae2c03b72b28d37c0e3ef95eee31d9",
-			"revisionTime": "2019-09-26T04:01:55Z"
+			"revision": "7cc4a602de05ef82472c0b5c96cdde4c8e18489e",
+			"revisionTime": "2019-09-28T08:09:09Z"
 		},
 		{
 			"checksumSHA1": "MCeXr2RNeiG1XG6V+er1OR0qyeo=",
