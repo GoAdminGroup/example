@@ -65,11 +65,10 @@ func main() {
 
 	r.Static("/uploads", "./uploads")
 
-	// customize your pages
-	// http://localhost:9033/admin/custom
+	// customize your index pages
 
-	r.GET("/admin/custom", func(ctx *gin.Context) {
-		engine.Content(ctx, func() types.Panel {
+	r.GET("/admin", func(ctx *gin.Context) {
+		engine.Content(ctx, func(ctx interface{}) (types.Panel, error) {
 			return datamodel.GetContent()
 		})
 	})
