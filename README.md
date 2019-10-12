@@ -1,4 +1,4 @@
-# go-admin example
+# GoAdmin Example
 
 A example show how to run go-admin. Just for reference, [here](http://www.go-admin.cn/en) to know more.
 
