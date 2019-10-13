@@ -1,12 +1,13 @@
 package main
 
 import (
-	_ "github.com/chenhg5/go-admin/adapter/gin"
-	"github.com/chenhg5/go-admin/engine"
-	"github.com/chenhg5/go-admin/examples/datamodel"
-	"github.com/chenhg5/go-admin/plugins/admin"
-	"github.com/chenhg5/go-admin/plugins/example"
-	"github.com/chenhg5/go-admin/template/types"
+	_ "github.com/GoAdminGroup/go-admin/adapter/gin"
+	"github.com/GoAdminGroup/go-admin/engine"
+	"github.com/GoAdminGroup/go-admin/examples/datamodel"
+	"github.com/GoAdminGroup/go-admin/plugins/admin"
+	"github.com/GoAdminGroup/go-admin/plugins/example"
+	"github.com/GoAdminGroup/go-admin/template/types"
+	_ "github.com/GoAdminGroup/themes/adminlte"
 	"github.com/gin-gonic/gin"
 	"io/ioutil"
 )
@@ -34,7 +35,7 @@ func main() {
 
 	// you can also add config like:
 	//
-	// import "github.com/chenhg5/go-admin/modules/config""
+	// import "github.com/GoAdminGroup/go-admin/modules/config""
 	//
 	// cfg := config.Config{
 	//	 Databases: config.DatabaseList{
