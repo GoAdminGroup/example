@@ -71,7 +71,7 @@ docker build -t go-admin-example .
 ### step 3
 
 ```shell
-docker run -p 9033:9033 -it -d go-admin-example /bin/bash -c "cd /go/src/app && GOPROXY=http://goproxy.cn GO111MODULE=on go run main.go"
+docker attach $(docker run -p 9033:9033 -it -d go-admin-example /bin/bash -c "cd /go/src/app && GOPROXY=http://goproxy.cn GO111MODULE=on go run main.go")
 ```
 
 visit: [http://localhost:9033/admin](http://localhost:9033/admin)
