@@ -8,6 +8,8 @@ Following three ways to run the code.
 
 以下三种方法。建议go版本大于1.11使用模块加载，同时设置环境变量```GOPROXY=http://goproxy.cn```，版本低于1.11的盆友使用第二种方法。如果本机没有golang环境，可以使用docker。
 
+**如果你没有golang基础，是golang新手的话，建议花几分钟了解一下[golang的依赖包管理机制](https://ms.logger.im/search?q=golang%20%E4%BE%9D%E8%B5%96%E7%AE%A1%E7%90%86)**
+
 ## use go module 使用模块加载依赖
 
 ### step 1
