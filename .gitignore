@@ -1,5 +1,4 @@
 .idea
 build
-go.sum
 vendor/**
 !vendor/vendor.json

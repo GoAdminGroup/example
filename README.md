@@ -10,6 +10,10 @@ Following three ways to run the code.
 
 **如果你没有golang基础，是golang新手的话，建议花几分钟了解一下[golang的依赖包管理机制](https://ms.logger.im/search?q=golang%20%E4%BE%9D%E8%B5%96%E7%AE%A1%E7%90%86)**
 
+If you are Windows user, [go-sqlite-dirver](https://github.com/mattn/go-sqlite3) require to download the gcc to run.
+
+如果你是windows用户，那么你需要下载gcc，因为本例子使用的是sqlite数据库，如果你不想使用sqlite数据库，你可以换成mysql，则不需要下载gcc。
+
 ## use go module 使用模块加载依赖
 
 ### step 1
