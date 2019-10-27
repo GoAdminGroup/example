@@ -2,15 +2,17 @@
 
 A example show how to run go-admin. Just for reference, [here](http://www.go-admin.cn/en) to know more.
 
-一个运行go-admin的例子。仅供参考，在[这里](http://www.go-admin.cn)了解更多。
-
 Following three ways to run the code.
+
+If you are Windows user, [go-sqlite-dirver](https://github.com/mattn/go-sqlite3) require to download the gcc to make it work.
+
+---
+
+一个运行go-admin的例子。仅供参考，在[这里](http://www.go-admin.cn)了解更多。
 
 以下三种方法。建议go版本大于1.11使用模块加载，同时设置环境变量```GOPROXY=http://goproxy.cn```，版本低于1.11的盆友使用第二种方法。如果本机没有golang环境，可以使用docker。
 
 **如果你没有golang基础，是golang新手的话，建议花几分钟了解一下[golang的依赖包管理机制](https://ms.logger.im/search?q=golang%20%E4%BE%9D%E8%B5%96%E7%AE%A1%E7%90%86)**
-
-If you are Windows user, [go-sqlite-dirver](https://github.com/mattn/go-sqlite3) require to download the gcc to run.
 
 如果你是windows用户，那么你需要下载gcc，因为本例子使用的是sqlite数据库，如果你不想使用sqlite数据库，你可以换成mysql，则不需要下载gcc。
 
