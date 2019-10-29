@@ -6,224 +6,272 @@
 			"checksumSHA1": "ZAJH7xmNfLcSraAs5y8CKTt4z3Q=",
 			"origin": "github.com/GoAdminGroup/go-admin/vendor/github.com/360EntSecGroup-Skylar/excelize",
 			"path": "github.com/360EntSecGroup-Skylar/excelize",
-			"revision": "d59bff508cee966a54879f7c847e98b04df78daf",
-			"revisionTime": "2019-10-26T11:17:29Z"
+			"revision": "d930125c7be7e9270ec7e57be0e0c34220dd450c",
+			"revisionTime": "2019-10-29T15:21:16Z"
 		},
 		{
 			"checksumSHA1": "W5hT825jpKG7IfcRojc5Gv6ecf8=",
 			"path": "github.com/GoAdminGroup/go-admin/adapter",
-			"revision": "d59bff508cee966a54879f7c847e98b04df78daf",
-			"revisionTime": "2019-10-26T11:17:29Z"
+			"revision": "d930125c7be7e9270ec7e57be0e0c34220dd450c",
+			"revisionTime": "2019-10-29T15:21:16Z"
 		},
 		{
-			"checksumSHA1": "yGxBa2sVLhh58sEZYe9aFdN9lXA=",
+			"checksumSHA1": "C9jfl1FlfIbBvD6xSeUQs7po6wk=",
 			"path": "github.com/GoAdminGroup/go-admin/adapter/gin",
-			"revision": "d59bff508cee966a54879f7c847e98b04df78daf",
-			"revisionTime": "2019-10-26T11:17:29Z"
+			"revision": "d930125c7be7e9270ec7e57be0e0c34220dd450c",
+			"revisionTime": "2019-10-29T15:21:16Z"
 		},
 		{
 			"checksumSHA1": "c01zg8bLgu7Jw3Q53cZ3OVVhr/c=",
 			"path": "github.com/GoAdminGroup/go-admin/context",
-			"revision": "d59bff508cee966a54879f7c847e98b04df78daf",
-			"revisionTime": "2019-10-26T11:17:29Z"
+			"revision": "d930125c7be7e9270ec7e57be0e0c34220dd450c",
+			"revisionTime": "2019-10-29T15:21:16Z"
 		},
 		{
 			"checksumSHA1": "fvJ0yq5RmYSZNl63UiqyVq8lGww=",
 			"path": "github.com/GoAdminGroup/go-admin/engine",
-			"revision": "d59bff508cee966a54879f7c847e98b04df78daf",
-			"revisionTime": "2019-10-26T11:17:29Z"
+			"revision": "d930125c7be7e9270ec7e57be0e0c34220dd450c",
+			"revisionTime": "2019-10-29T15:21:16Z"
 		},
 		{
-			"checksumSHA1": "ZvWYL8SuFMXHW+pakwi3XXCmST0=",
+			"checksumSHA1": "ZknRf5BjwNpu1nHrcrTpvR6e14w=",
 			"path": "github.com/GoAdminGroup/go-admin/examples/datamodel",
-			"revision": "d59bff508cee966a54879f7c847e98b04df78daf",
-			"revisionTime": "2019-10-26T11:17:29Z"
+			"revision": "d930125c7be7e9270ec7e57be0e0c34220dd450c",
+			"revisionTime": "2019-10-29T15:21:16Z"
 		},
 		{
-			"checksumSHA1": "TFoae5lHwu+ojXub8r9Dke8IOAk=",
+			"checksumSHA1": "g25AGC7UsfFwoDn/FP3GgkOFDtE=",
 			"path": "github.com/GoAdminGroup/go-admin/modules/auth",
-			"revision": "d59bff508cee966a54879f7c847e98b04df78daf",
-			"revisionTime": "2019-10-26T11:17:29Z"
+			"revision": "d930125c7be7e9270ec7e57be0e0c34220dd450c",
+			"revisionTime": "2019-10-29T15:21:16Z"
 		},
 		{
 			"checksumSHA1": "McQC21K5e/VMd0cb/dfGQ2fvvBY=",
 			"path": "github.com/GoAdminGroup/go-admin/modules/config",
-			"revision": "d59bff508cee966a54879f7c847e98b04df78daf",
-			"revisionTime": "2019-10-26T11:17:29Z"
+			"revision": "d930125c7be7e9270ec7e57be0e0c34220dd450c",
+			"revisionTime": "2019-10-29T15:21:16Z"
 		},
 		{
 			"checksumSHA1": "pt8+hT9qC5bpfTFLlj0WpezYkGU=",
 			"path": "github.com/GoAdminGroup/go-admin/modules/db",
-			"revision": "d59bff508cee966a54879f7c847e98b04df78daf",
-			"revisionTime": "2019-10-26T11:17:29Z"
+			"revision": "d930125c7be7e9270ec7e57be0e0c34220dd450c",
+			"revisionTime": "2019-10-29T15:21:16Z"
 		},
 		{
 			"checksumSHA1": "LvM9wwo3OCE7R2vJbRL1B2yV5tM=",
 			"path": "github.com/GoAdminGroup/go-admin/modules/db/dialect",
-			"revision": "d59bff508cee966a54879f7c847e98b04df78daf",
-			"revisionTime": "2019-10-26T11:17:29Z"
+			"revision": "d930125c7be7e9270ec7e57be0e0c34220dd450c",
+			"revisionTime": "2019-10-29T15:21:16Z"
 		},
 		{
 			"checksumSHA1": "prabSJB7rdk5KdRn3lNZJbCjPSo=",
 			"path": "github.com/GoAdminGroup/go-admin/modules/db/drivers/sqlite",
-			"revision": "d59bff508cee966a54879f7c847e98b04df78daf",
-			"revisionTime": "2019-10-26T11:17:29Z"
+			"revision": "d930125c7be7e9270ec7e57be0e0c34220dd450c",
+			"revisionTime": "2019-10-29T15:21:16Z"
 		},
 		{
 			"checksumSHA1": "iwl0N+C/HGOK4ieBhQJJlfcjk90=",
 			"path": "github.com/GoAdminGroup/go-admin/modules/file",
-			"revision": "d59bff508cee966a54879f7c847e98b04df78daf",
-			"revisionTime": "2019-10-26T11:17:29Z"
+			"revision": "d930125c7be7e9270ec7e57be0e0c34220dd450c",
+			"revisionTime": "2019-10-29T15:21:16Z"
 		},
 		{
 			"checksumSHA1": "fPDbjlz7fJLmfWTCfhhjuAgOMPI=",
 			"path": "github.com/GoAdminGroup/go-admin/modules/language",
-			"revision": "d59bff508cee966a54879f7c847e98b04df78daf",
-			"revisionTime": "2019-10-26T11:17:29Z"
+			"revision": "d930125c7be7e9270ec7e57be0e0c34220dd450c",
+			"revisionTime": "2019-10-29T15:21:16Z"
 		},
 		{
 			"checksumSHA1": "RAkJHfH1l0si7JEswYk8ozW+Qyw=",
 			"path": "github.com/GoAdminGroup/go-admin/modules/logger",
-			"revision": "d59bff508cee966a54879f7c847e98b04df78daf",
-			"revisionTime": "2019-10-26T11:17:29Z"
+			"revision": "d930125c7be7e9270ec7e57be0e0c34220dd450c",
+			"revisionTime": "2019-10-29T15:21:16Z"
 		},
 		{
 			"checksumSHA1": "Wa8XLL8FVEQxtOQcF+RnuScR/dg=",
 			"path": "github.com/GoAdminGroup/go-admin/modules/menu",
-			"revision": "d59bff508cee966a54879f7c847e98b04df78daf",
-			"revisionTime": "2019-10-26T11:17:29Z"
+			"revision": "d930125c7be7e9270ec7e57be0e0c34220dd450c",
+			"revisionTime": "2019-10-29T15:21:16Z"
 		},
 		{
-			"checksumSHA1": "BZlym4lLvzrF4j1j22w/ZQGIylY=",
+			"checksumSHA1": "8zdxCcgZSgraBTqsuNHtB0UsDxA=",
 			"path": "github.com/GoAdminGroup/go-admin/modules/page",
-			"revision": "d59bff508cee966a54879f7c847e98b04df78daf",
-			"revisionTime": "2019-10-26T11:17:29Z"
+			"revision": "d930125c7be7e9270ec7e57be0e0c34220dd450c",
+			"revisionTime": "2019-10-29T15:21:16Z"
 		},
 		{
-			"checksumSHA1": "TOsDnYW+0YlPP/Lt2ByNR9TSgpw=",
+			"checksumSHA1": "8ieHLY1wxGO7BPN4pW8p2d5OiVA=",
 			"path": "github.com/GoAdminGroup/go-admin/modules/system",
-			"revision": "d59bff508cee966a54879f7c847e98b04df78daf",
-			"revisionTime": "2019-10-26T11:17:29Z"
+			"revision": "d930125c7be7e9270ec7e57be0e0c34220dd450c",
+			"revisionTime": "2019-10-29T15:21:16Z"
 		},
 		{
 			"checksumSHA1": "gUZvqb0g4NHsaR8O7QPFSC0sQYU=",
 			"path": "github.com/GoAdminGroup/go-admin/plugins",
-			"revision": "d59bff508cee966a54879f7c847e98b04df78daf",
-			"revisionTime": "2019-10-26T11:17:29Z"
+			"revision": "d930125c7be7e9270ec7e57be0e0c34220dd450c",
+			"revisionTime": "2019-10-29T15:21:16Z"
 		},
 		{
-			"checksumSHA1": "RVbruVuzLFtr138/MgY8H7LJMO0=",
+			"checksumSHA1": "4bbOmRCycWnRKIs+yk8ZVIwpbHY=",
 			"path": "github.com/GoAdminGroup/go-admin/plugins/admin",
-			"revision": "d59bff508cee966a54879f7c847e98b04df78daf",
-			"revisionTime": "2019-10-26T11:17:29Z"
+			"revision": "d930125c7be7e9270ec7e57be0e0c34220dd450c",
+			"revisionTime": "2019-10-29T15:21:16Z"
 		},
 		{
-			"checksumSHA1": "xnDuPhgEjFSajOnVZsI83p9CRvI=",
+			"checksumSHA1": "ojw5MNaMFFcfzfNjyAlooKffPpA=",
 			"path": "github.com/GoAdminGroup/go-admin/plugins/admin/controller",
-			"revision": "d59bff508cee966a54879f7c847e98b04df78daf",
-			"revisionTime": "2019-10-26T11:17:29Z"
+			"revision": "d930125c7be7e9270ec7e57be0e0c34220dd450c",
+			"revisionTime": "2019-10-29T15:21:16Z"
 		},
 		{
 			"checksumSHA1": "b5DGHa02JjLW4WTUxKiR55oM08E=",
 			"path": "github.com/GoAdminGroup/go-admin/plugins/admin/models",
-			"revision": "d59bff508cee966a54879f7c847e98b04df78daf",
-			"revisionTime": "2019-10-26T11:17:29Z"
+			"revision": "d930125c7be7e9270ec7e57be0e0c34220dd450c",
+			"revisionTime": "2019-10-29T15:21:16Z"
 		},
 		{
 			"checksumSHA1": "2ThIABJJODwI6m4tEzafcH3KnME=",
 			"path": "github.com/GoAdminGroup/go-admin/plugins/admin/modules",
-			"revision": "d59bff508cee966a54879f7c847e98b04df78daf",
-			"revisionTime": "2019-10-26T11:17:29Z"
+			"revision": "d930125c7be7e9270ec7e57be0e0c34220dd450c",
+			"revisionTime": "2019-10-29T15:21:16Z"
 		},
 		{
 			"checksumSHA1": "9lzmVz5/peVKJN5lqeFnQlK0YMg=",
 			"path": "github.com/GoAdminGroup/go-admin/plugins/admin/modules/constant",
-			"revision": "d59bff508cee966a54879f7c847e98b04df78daf",
-			"revisionTime": "2019-10-26T11:17:29Z"
+			"revision": "d930125c7be7e9270ec7e57be0e0c34220dd450c",
+			"revisionTime": "2019-10-29T15:21:16Z"
 		},
 		{
 			"checksumSHA1": "gNLq6tEi7npagWGpANcz6ijEXVE=",
 			"path": "github.com/GoAdminGroup/go-admin/plugins/admin/modules/form",
-			"revision": "d59bff508cee966a54879f7c847e98b04df78daf",
-			"revisionTime": "2019-10-26T11:17:29Z"
+			"revision": "d930125c7be7e9270ec7e57be0e0c34220dd450c",
+			"revisionTime": "2019-10-29T15:21:16Z"
 		},
 		{
 			"checksumSHA1": "FlrLGaNMWd6/cGgpOX3WCQYfrHw=",
 			"path": "github.com/GoAdminGroup/go-admin/plugins/admin/modules/guard",
-			"revision": "d59bff508cee966a54879f7c847e98b04df78daf",
-			"revisionTime": "2019-10-26T11:17:29Z"
+			"revision": "d930125c7be7e9270ec7e57be0e0c34220dd450c",
+			"revisionTime": "2019-10-29T15:21:16Z"
 		},
 		{
 			"checksumSHA1": "sOaWqI51CKR6UzyMPD9p4nOnw5w=",
 			"path": "github.com/GoAdminGroup/go-admin/plugins/admin/modules/paginator",
-			"revision": "d59bff508cee966a54879f7c847e98b04df78daf",
-			"revisionTime": "2019-10-26T11:17:29Z"
+			"revision": "d930125c7be7e9270ec7e57be0e0c34220dd450c",
+			"revisionTime": "2019-10-29T15:21:16Z"
 		},
 		{
 			"checksumSHA1": "x7uTLXHLlDPhph4JO/xOCU68TxU=",
 			"path": "github.com/GoAdminGroup/go-admin/plugins/admin/modules/parameter",
-			"revision": "d59bff508cee966a54879f7c847e98b04df78daf",
-			"revisionTime": "2019-10-26T11:17:29Z"
+			"revision": "d930125c7be7e9270ec7e57be0e0c34220dd450c",
+			"revisionTime": "2019-10-29T15:21:16Z"
 		},
 		{
 			"checksumSHA1": "N+buSTu4I5xFumVHt2r/s8ZqQcU=",
 			"path": "github.com/GoAdminGroup/go-admin/plugins/admin/modules/response",
-			"revision": "d59bff508cee966a54879f7c847e98b04df78daf",
-			"revisionTime": "2019-10-26T11:17:29Z"
+			"revision": "d930125c7be7e9270ec7e57be0e0c34220dd450c",
+			"revisionTime": "2019-10-29T15:21:16Z"
 		},
 		{
 			"checksumSHA1": "dCxujwmBDGE6SD4sUCTcKq6GV/s=",
 			"path": "github.com/GoAdminGroup/go-admin/plugins/admin/modules/table",
-			"revision": "d59bff508cee966a54879f7c847e98b04df78daf",
-			"revisionTime": "2019-10-26T11:17:29Z"
+			"revision": "d930125c7be7e9270ec7e57be0e0c34220dd450c",
+			"revisionTime": "2019-10-29T15:21:16Z"
 		},
 		{
-			"checksumSHA1": "GTRKReszDqWYUfm+g8+4J3Ht7N4=",
+			"checksumSHA1": "SaJBKrgphn98onOXPwNP1NV5ohk=",
 			"path": "github.com/GoAdminGroup/go-admin/plugins/example",
-			"revision": "d59bff508cee966a54879f7c847e98b04df78daf",
-			"revisionTime": "2019-10-26T11:17:29Z"
+			"revision": "d930125c7be7e9270ec7e57be0e0c34220dd450c",
+			"revisionTime": "2019-10-29T15:21:16Z"
 		},
 		{
-			"checksumSHA1": "EvP9T1tYXZBmyI122rFJQdFZ2zs=",
+			"checksumSHA1": "QpsUN2hiLNPo6WPBfPzF/kkJLIs=",
 			"path": "github.com/GoAdminGroup/go-admin/template",
-			"revision": "d59bff508cee966a54879f7c847e98b04df78daf",
-			"revisionTime": "2019-10-26T11:17:29Z"
+			"revision": "d930125c7be7e9270ec7e57be0e0c34220dd450c",
+			"revisionTime": "2019-10-29T15:21:16Z"
 		},
 		{
-			"checksumSHA1": "M1tc8cctxxHsRnjdzFMBNmfr5RU=",
+			"checksumSHA1": "GBoiKSgmBec3EFEDqmthFNlA7NA=",
+			"path": "github.com/GoAdminGroup/go-admin/template/chartjs",
+			"revision": "d930125c7be7e9270ec7e57be0e0c34220dd450c",
+			"revisionTime": "2019-10-29T15:21:16Z"
+		},
+		{
+			"checksumSHA1": "zjhrvwQBVDy2mLX9ukOBcrbta7g=",
 			"path": "github.com/GoAdminGroup/go-admin/template/components",
-			"revision": "d59bff508cee966a54879f7c847e98b04df78daf",
-			"revisionTime": "2019-10-26T11:17:29Z"
+			"revision": "d930125c7be7e9270ec7e57be0e0c34220dd450c",
+			"revisionTime": "2019-10-29T15:21:16Z"
 		},
 		{
-			"checksumSHA1": "r/NbGGNBMc+4qRCDg8nKeKM8Bv4=",
+			"checksumSHA1": "1DkMfIxof97+yVlxT4EzOwFSXeI=",
 			"path": "github.com/GoAdminGroup/go-admin/template/login",
-			"revision": "d59bff508cee966a54879f7c847e98b04df78daf",
-			"revisionTime": "2019-10-26T11:17:29Z"
+			"revision": "d930125c7be7e9270ec7e57be0e0c34220dd450c",
+			"revisionTime": "2019-10-29T15:21:16Z"
 		},
 		{
-			"checksumSHA1": "oIGpvd20zVjLAUc6sfcHSJEEt/I=",
+			"checksumSHA1": "xMs+2BxHCPusFTSrQmtpyrfGdP8=",
 			"path": "github.com/GoAdminGroup/go-admin/template/types",
-			"revision": "d59bff508cee966a54879f7c847e98b04df78daf",
-			"revisionTime": "2019-10-26T11:17:29Z"
+			"revision": "d930125c7be7e9270ec7e57be0e0c34220dd450c",
+			"revisionTime": "2019-10-29T15:21:16Z"
 		},
 		{
 			"checksumSHA1": "avhqx559jG0LgdfY3PYUvc9hBBk=",
 			"path": "github.com/GoAdminGroup/go-admin/template/types/form",
-			"revision": "d59bff508cee966a54879f7c847e98b04df78daf",
-			"revisionTime": "2019-10-26T11:17:29Z"
+			"revision": "d930125c7be7e9270ec7e57be0e0c34220dd450c",
+			"revisionTime": "2019-10-29T15:21:16Z"
 		},
 		{
-			"checksumSHA1": "GP1knWR1Eh3secgvXDEfPeNCMy8=",
+			"checksumSHA1": "hqSsppmq0pI5T1vSReCCeY5LESw=",
 			"path": "github.com/GoAdminGroup/themes/adminlte",
-			"revision": "dce6eba5eff6fa0fbced96974999135afeec57da",
-			"revisionTime": "2019-10-24T17:28:14Z"
+			"revision": "fddcb828907bd37bdb2baca6bbc5ed93a38d4b05",
+			"revisionTime": "2019-10-29T15:00:33Z"
 		},
 		{
-			"checksumSHA1": "XqqFQRcJi56hLaFS0a/BrKAMIQE=",
+			"checksumSHA1": "3iPerqIGmvzuAw6H9G+MDHByZSg=",
+			"path": "github.com/GoAdminGroup/themes/adminlte/components",
+			"revision": "fddcb828907bd37bdb2baca6bbc5ed93a38d4b05",
+			"revisionTime": "2019-10-29T15:00:33Z"
+		},
+		{
+			"checksumSHA1": "yZZ8LazmFXGpZsfjFMQub5mPwfI=",
+			"path": "github.com/GoAdminGroup/themes/adminlte/components/chart_legend",
+			"revision": "fddcb828907bd37bdb2baca6bbc5ed93a38d4b05",
+			"revisionTime": "2019-10-29T15:00:33Z"
+		},
+		{
+			"checksumSHA1": "FI1La3r0Tw6ak8D6aSl7mQte7ng=",
+			"path": "github.com/GoAdminGroup/themes/adminlte/components/description",
+			"revision": "fddcb828907bd37bdb2baca6bbc5ed93a38d4b05",
+			"revisionTime": "2019-10-29T15:00:33Z"
+		},
+		{
+			"checksumSHA1": "jhrNLvcYxxtkZhGDbnS+35tTcSg=",
+			"path": "github.com/GoAdminGroup/themes/adminlte/components/infobox",
+			"revision": "fddcb828907bd37bdb2baca6bbc5ed93a38d4b05",
+			"revisionTime": "2019-10-29T15:00:33Z"
+		},
+		{
+			"checksumSHA1": "oKhwhDQ3zjMJVBcSs7PNU48HAKI=",
+			"path": "github.com/GoAdminGroup/themes/adminlte/components/productlist",
+			"revision": "fddcb828907bd37bdb2baca6bbc5ed93a38d4b05",
+			"revisionTime": "2019-10-29T15:00:33Z"
+		},
+		{
+			"checksumSHA1": "MH1/5lw1z7AT+HIWan8XAkfUZHY=",
+			"path": "github.com/GoAdminGroup/themes/adminlte/components/progress_group",
+			"revision": "fddcb828907bd37bdb2baca6bbc5ed93a38d4b05",
+			"revisionTime": "2019-10-29T15:00:33Z"
+		},
+		{
+			"checksumSHA1": "iR7R8ICPykFEwmSiHVyj/TjqBDA=",
+			"path": "github.com/GoAdminGroup/themes/adminlte/components/smallbox",
+			"revision": "fddcb828907bd37bdb2baca6bbc5ed93a38d4b05",
+			"revisionTime": "2019-10-29T15:00:33Z"
+		},
+		{
+			"checksumSHA1": "eCq9NPg6YMx8g61BrbpK9YqgYzs=",
 			"path": "github.com/GoAdminGroup/themes/adminlte/resource",
-			"revision": "dce6eba5eff6fa0fbced96974999135afeec57da",
-			"revisionTime": "2019-10-24T17:28:14Z"
+			"revision": "fddcb828907bd37bdb2baca6bbc5ed93a38d4b05",
+			"revisionTime": "2019-10-29T15:00:33Z"
 		},
 		{
 			"checksumSHA1": "QeKwBtN2df+j+4stw3bQJ6yO4EY=",
@@ -271,8 +319,8 @@
 			"checksumSHA1": "SEnjvwVyfuU2xBaOfXfwPD5MZqk=",
 			"origin": "github.com/GoAdminGroup/go-admin/vendor/github.com/mattn/go-colorable",
 			"path": "github.com/mattn/go-colorable",
-			"revision": "d59bff508cee966a54879f7c847e98b04df78daf",
-			"revisionTime": "2019-10-26T11:17:29Z"
+			"revision": "d930125c7be7e9270ec7e57be0e0c34220dd450c",
+			"revisionTime": "2019-10-29T15:21:16Z"
 		},
 		{
 			"checksumSHA1": "GiVgQkx5acnq+JZtYiuHPlhHoso=",
@@ -290,8 +338,8 @@
 			"checksumSHA1": "CIK3BBNX3nuUQCmNqTQydNfMNKI=",
 			"origin": "github.com/GoAdminGroup/go-admin/vendor/github.com/mgutz/ansi",
 			"path": "github.com/mgutz/ansi",
-			"revision": "d59bff508cee966a54879f7c847e98b04df78daf",
-			"revisionTime": "2019-10-26T11:17:29Z"
+			"revision": "d930125c7be7e9270ec7e57be0e0c34220dd450c",
+			"revisionTime": "2019-10-29T15:21:16Z"
 		},
 		{
 			"checksumSHA1": "ZTcgWKWHsrX0RXYVXn5Xeb8Q0go=",
@@ -309,8 +357,8 @@
 			"checksumSHA1": "2jsbDTvwxafPp7FJjJ8IIFlTLjs=",
 			"origin": "github.com/GoAdminGroup/go-admin/vendor/github.com/mohae/deepcopy",
 			"path": "github.com/mohae/deepcopy",
-			"revision": "d59bff508cee966a54879f7c847e98b04df78daf",
-			"revisionTime": "2019-10-26T11:17:29Z"
+			"revision": "d930125c7be7e9270ec7e57be0e0c34220dd450c",
+			"revisionTime": "2019-10-29T15:21:16Z"
 		},
 		{
 			"checksumSHA1": "+nVM+CEZGAopOrYlLifgWP+X01E=",
@@ -323,8 +371,8 @@
 			"checksumSHA1": "4GI/G+nYyCQ3ltASSBIunUr2LYk=",
 			"origin": "github.com/GoAdminGroup/go-admin/vendor/github.com/sirupsen/logrus",
 			"path": "github.com/sirupsen/logrus",
-			"revision": "d59bff508cee966a54879f7c847e98b04df78daf",
-			"revisionTime": "2019-10-26T11:17:29Z"
+			"revision": "d930125c7be7e9270ec7e57be0e0c34220dd450c",
+			"revisionTime": "2019-10-29T15:21:16Z"
 		},
 		{
 			"checksumSHA1": "z1jqX/kf16YO8Rd7bCtY+p4+TEs=",
@@ -336,15 +384,15 @@
 			"checksumSHA1": "oCH3J96RWvO8W4xjix47PModpio=",
 			"origin": "github.com/GoAdminGroup/go-admin/vendor/golang.org/x/crypto/bcrypt",
 			"path": "golang.org/x/crypto/bcrypt",
-			"revision": "d59bff508cee966a54879f7c847e98b04df78daf",
-			"revisionTime": "2019-10-26T11:17:29Z"
+			"revision": "d930125c7be7e9270ec7e57be0e0c34220dd450c",
+			"revisionTime": "2019-10-29T15:21:16Z"
 		},
 		{
 			"checksumSHA1": "oVPHWesOmZ02vLq2fglGvf+AMgk=",
 			"origin": "github.com/GoAdminGroup/go-admin/vendor/golang.org/x/crypto/blowfish",
 			"path": "golang.org/x/crypto/blowfish",
-			"revision": "d59bff508cee966a54879f7c847e98b04df78daf",
-			"revisionTime": "2019-10-26T11:17:29Z"
+			"revision": "d930125c7be7e9270ec7e57be0e0c34220dd450c",
+			"revisionTime": "2019-10-29T15:21:16Z"
 		},
 		{
 			"checksumSHA1": "kMCWP4eSGn04uVMkyPqJr6y7ZWw=",
@@ -356,29 +404,29 @@
 			"checksumSHA1": "WiKh0UElNn4k5R6jD+ieXA7KX6I=",
 			"origin": "github.com/GoAdminGroup/go-admin/vendor/golang.org/x/text/internal/language",
 			"path": "golang.org/x/text/internal/language",
-			"revision": "d59bff508cee966a54879f7c847e98b04df78daf",
-			"revisionTime": "2019-10-26T11:17:29Z"
+			"revision": "d930125c7be7e9270ec7e57be0e0c34220dd450c",
+			"revisionTime": "2019-10-29T15:21:16Z"
 		},
 		{
 			"checksumSHA1": "VDwNSsZP6KShjTSwGUQUGJVrs1I=",
 			"origin": "github.com/GoAdminGroup/go-admin/vendor/golang.org/x/text/internal/language/compact",
 			"path": "golang.org/x/text/internal/language/compact",
-			"revision": "d59bff508cee966a54879f7c847e98b04df78daf",
-			"revisionTime": "2019-10-26T11:17:29Z"
+			"revision": "d930125c7be7e9270ec7e57be0e0c34220dd450c",
+			"revisionTime": "2019-10-29T15:21:16Z"
 		},
 		{
 			"checksumSHA1": "hyNCcTwMQnV6/MK8uUW9E5H0J0M=",
 			"origin": "github.com/GoAdminGroup/go-admin/vendor/golang.org/x/text/internal/tag",
 			"path": "golang.org/x/text/internal/tag",
-			"revision": "d59bff508cee966a54879f7c847e98b04df78daf",
-			"revisionTime": "2019-10-26T11:17:29Z"
+			"revision": "d930125c7be7e9270ec7e57be0e0c34220dd450c",
+			"revisionTime": "2019-10-29T15:21:16Z"
 		},
 		{
 			"checksumSHA1": "JjCA9d5oEYmK+ZPP+hLcgUb0Gng=",
 			"origin": "github.com/GoAdminGroup/go-admin/vendor/golang.org/x/text/language",
 			"path": "golang.org/x/text/language",
-			"revision": "d59bff508cee966a54879f7c847e98b04df78daf",
-			"revisionTime": "2019-10-26T11:17:29Z"
+			"revision": "d930125c7be7e9270ec7e57be0e0c34220dd450c",
+			"revisionTime": "2019-10-29T15:21:16Z"
 		},
 		{
 			"checksumSHA1": "P/k5ZGf0lEBgpKgkwy++F7K1PSg=",

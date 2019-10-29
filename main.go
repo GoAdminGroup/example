@@ -3,6 +3,8 @@ package main
 import (
 	_ "github.com/GoAdminGroup/go-admin/adapter/gin"
 	_ "github.com/GoAdminGroup/go-admin/modules/db/drivers/sqlite"
+	"github.com/GoAdminGroup/go-admin/template"
+	"github.com/GoAdminGroup/go-admin/template/chartjs"
 	_ "github.com/GoAdminGroup/themes/adminlte"
 
 	"github.com/GoAdminGroup/go-admin/engine"
@@ -34,6 +36,8 @@ func main() {
 	// customize a plugin
 
 	examplePlugin := example.NewExample()
+
+	template.AddComp(chartjs.NewChart())
 
 	// you can also add config like:
 	//
