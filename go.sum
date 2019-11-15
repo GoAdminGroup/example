@@ -4,6 +4,8 @@ github.com/GoAdminGroup/go-admin v1.0.8 h1:36FVUBTMQJ0NGjKj9+IaXSZLMlM8s/X4pLUlp
 github.com/GoAdminGroup/go-admin v1.0.8/go.mod h1:70OXgIZv8TbJq29XxpsjtH1OrezEDL9MW+cJVsMpPFo=
 github.com/GoAdminGroup/themes v0.0.7 h1:U03fbiT/mUqlRauCmkBKy1mrHP4NLKQtav3mF/nm+1U=
 github.com/GoAdminGroup/themes v0.0.7/go.mod h1:ABCOeBeibfg9DxAsGVa1NzYK9/nIbHT/BuFrCRIKo8A=
+github.com/GoAdminGroup/themes v0.0.8 h1:AlUS7yrGW3O8i0U4kI2FhVNLYKG7BhoQdhmpLQHSdGU=
+github.com/GoAdminGroup/themes v0.0.8/go.mod h1:ABCOeBeibfg9DxAsGVa1NzYK9/nIbHT/BuFrCRIKo8A=
 github.com/davecgh/go-spew v1.1.0/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
 github.com/davecgh/go-spew v1.1.1 h1:vj9j/u1bqnvCEfJOwUhtlOARqs3+rkHYY13jYWTU97c=
 github.com/davecgh/go-spew v1.1.1/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
