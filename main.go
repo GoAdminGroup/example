@@ -64,7 +64,7 @@ func main() {
 	//
 	// eng.AddConfig(cfg)
 
-	if err := eng.AddConfigFromJson("./config.json").
+	if err := eng.AddConfigFromJSON("./config.json").
 		AddPlugins(adminPlugin, examplePlugin).
 		Use(r); err != nil {
 		panic(err)
