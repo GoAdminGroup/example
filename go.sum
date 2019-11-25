@@ -2,6 +2,8 @@ github.com/360EntSecGroup-Skylar/excelize v1.4.1 h1:l55mJb6rkkaUzOpSsgEeKYtS6/0g
 github.com/360EntSecGroup-Skylar/excelize v1.4.1/go.mod h1:vnax29X2usfl7HHkBrX5EvSCJcmH3dT9luvxzu8iGAE=
 github.com/GoAdminGroup/go-admin v1.0.9 h1:BSvKprDVjN6kQZ/9DZ2a6lGxBwg1CG/grGIQMe8WYH4=
 github.com/GoAdminGroup/go-admin v1.0.9/go.mod h1:70OXgIZv8TbJq29XxpsjtH1OrezEDL9MW+cJVsMpPFo=
+github.com/GoAdminGroup/go-admin v1.0.10 h1:WSn+f0t+PbaTCjjhM8sub6Pf7yuGxchuOrKk5j3A5zY=
+github.com/GoAdminGroup/go-admin v1.0.10/go.mod h1:70OXgIZv8TbJq29XxpsjtH1OrezEDL9MW+cJVsMpPFo=
 github.com/GoAdminGroup/themes v0.0.9 h1:F1AouzisRS9mNdC2/17r586g9V28qHl7PGyQUY5YN9Q=
 github.com/GoAdminGroup/themes v0.0.9/go.mod h1:ABCOeBeibfg9DxAsGVa1NzYK9/nIbHT/BuFrCRIKo8A=
 github.com/davecgh/go-spew v1.1.0/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
