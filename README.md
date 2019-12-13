@@ -18,6 +18,10 @@ If you are Windows user, [go-sqlite-dirver](https://github.com/mattn/go-sqlite3)
 
 ## use go module 使用模块加载依赖
 
+To use go module, you should set GO111MODULE=on first.
+
+使用 go module的话，需要先设置环境变量```GO111MODULE```为```on```
+
 ### step 1
 
 ```shell
@@ -34,6 +38,10 @@ GO111MODULE=on go run main.go
 visit: [http://localhost:9033/admin](http://localhost:9033/admin)
 
 ## use gopath 使用GOPATH加载依赖
+
+To use go path, you should set GO111MODULE=off first.
+
+使用 go module的话，需要先设置环境变量```GO111MODULE```为```off```
 
 ### step 1
 
