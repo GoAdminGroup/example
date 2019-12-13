@@ -41,7 +41,7 @@ visit: [http://localhost:9033/admin](http://localhost:9033/admin)
 
 To use go path, you should set GO111MODULE=off first.
 
-使用 go module的话，需要先设置环境变量```GO111MODULE```为```off```
+使用 go path的话，需要先设置环境变量```GO111MODULE```为```off```
 
 ### step 1
 
