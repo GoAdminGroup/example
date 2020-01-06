@@ -41,7 +41,7 @@ func main() {
 
 	// you can also add config like:
 	//
-	// import "github.com/GoAdminGroup/go-admin/modules/config""
+	// import "github.com/GoAdminGroup/go-admin/modules/config"
 	//
 	// cfg := config.Config{
 	//	 Databases: config.DatabaseList{
