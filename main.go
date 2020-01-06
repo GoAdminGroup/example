@@ -34,12 +34,14 @@ func main() {
 	adminPlugin.AddGenerator("user", datamodel.GetUserTable)
 
 	// customize a plugin
+	// 自己定制一个插件👇
 
 	examplePlugin := example.NewExample()
 
 	template.AddComp(chartjs.NewChart())
 
 	// you can also add config like:
+	// 您也可以像下面这样的方式去引入数据库👇
 	//
 	// import "github.com/GoAdminGroup/go-admin/modules/config"
 	//
@@ -73,6 +75,7 @@ func main() {
 	r.Static("/uploads", "./uploads")
 
 	// customize your index pages
+	// 下面这样定制您的首页👇
 
 	r.GET("/admin", func(ctx *gin.Context) {
 		engine.Content(ctx, func(ctx interface{}) (types.Panel, error) {
