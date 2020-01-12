@@ -6,6 +6,7 @@ import (
 	"github.com/GoAdminGroup/go-admin/template"
 	"github.com/GoAdminGroup/go-admin/template/chartjs"
 	_ "github.com/GoAdminGroup/themes/adminlte"
+	"net/http"
 
 	"github.com/GoAdminGroup/go-admin/engine"
 	"github.com/GoAdminGroup/go-admin/examples/datamodel"
@@ -80,6 +81,13 @@ func main() {
 	r.GET("/admin", func(ctx *gin.Context) {
 		engine.Content(ctx, func(ctx interface{}) (types.Panel, error) {
 			return DashboardPage()
+		})
+	})
+
+	r.POST("/admin/popup", func(ctx *gin.Context) {
+		ctx.JSON(http.StatusOK, gin.H{
+			"code": 0,
+			"data": "<h2>hello world</h2>",
 		})
 	})
 
