@@ -1,20 +1,21 @@
 package main
 
 import (
-	_ "github.com/GoAdminGroup/go-admin/adapter/gin"
-	_ "github.com/GoAdminGroup/go-admin/modules/db/drivers/sqlite"
-	"github.com/GoAdminGroup/go-admin/template"
-	"github.com/GoAdminGroup/go-admin/template/chartjs"
-	_ "github.com/GoAdminGroup/themes/adminlte"
+	"io/ioutil"
 	"net/http"
+
+	_ "github.com/GoAdminGroup/go-admin/adapter/gin"               // adapter
+	_ "github.com/GoAdminGroup/go-admin/modules/db/drivers/sqlite" // sql driver
+	_ "github.com/GoAdminGroup/themes/adminlte"                    // theme
 
 	"github.com/GoAdminGroup/go-admin/engine"
 	"github.com/GoAdminGroup/go-admin/examples/datamodel"
 	"github.com/GoAdminGroup/go-admin/plugins/admin"
 	"github.com/GoAdminGroup/go-admin/plugins/example"
+	"github.com/GoAdminGroup/go-admin/template"
+	"github.com/GoAdminGroup/go-admin/template/chartjs"
 	"github.com/GoAdminGroup/go-admin/template/types"
 	"github.com/gin-gonic/gin"
-	"io/ioutil"
 )
 
 func main() {
