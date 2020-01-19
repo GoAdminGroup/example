@@ -8,8 +8,8 @@ import (
 	_ "github.com/GoAdminGroup/go-admin/modules/db/drivers/sqlite" // sql driver
 	_ "github.com/GoAdminGroup/themes/adminlte"                    // theme
 
+	"github.com/GoAdminGroup/example/tables"
 	"github.com/GoAdminGroup/go-admin/engine"
-	"github.com/GoAdminGroup/go-admin/examples/datamodel"
 	"github.com/GoAdminGroup/go-admin/plugins/admin"
 	"github.com/GoAdminGroup/go-admin/plugins/example"
 	"github.com/GoAdminGroup/go-admin/template"
@@ -26,14 +26,14 @@ func main() {
 
 	eng := engine.Default()
 
-	adminPlugin := admin.NewAdmin(datamodel.Generators)
+	adminPlugin := admin.NewAdmin(tables.Generators)
 
 	// add generator, first parameter is the url prefix of table when visit.
 	// example:
 	//
 	// "user" => http://localhost:9033/admin/info/user
 	//
-	adminPlugin.AddGenerator("user", datamodel.GetUserTable)
+	adminPlugin.AddGenerator("user", tables.GetUserTable)
 
 	// customize a plugin
 	// 自己定制一个插件👇
