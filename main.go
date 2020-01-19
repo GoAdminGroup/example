@@ -85,6 +85,14 @@ func main() {
 		})
 	})
 
+	r.GET("/admin/external_link", func(ctx *gin.Context) {
+		engine.Content(ctx, func(ctx interface{}) (types.Panel, error) {
+			return types.Panel{
+				Content: `<iframe style="width:100%;height:800px;" src="https://gitee.com/go-admin/go-admin"></iframe>`,
+			}, nil
+		})
+	})
+
 	r.POST("/admin/popup", func(ctx *gin.Context) {
 
 		user, ok := eng.User(ctx)
