@@ -2,6 +2,7 @@ package tables
 
 import (
 	"fmt"
+	"github.com/GoAdminGroup/go-admin/context"
 	"github.com/GoAdminGroup/go-admin/modules/db"
 	form2 "github.com/GoAdminGroup/go-admin/plugins/admin/modules/form"
 	"github.com/GoAdminGroup/go-admin/plugins/admin/modules/table"
@@ -61,7 +62,14 @@ func GetUserTable() (userTable table.Table) {
 
 	info.AddActionButton("google", action.Jump("https://google.com"))
 	info.AddButton("google", icon.Google, action.Jump("https://google.com"))
-	info.AddButton("info", icon.Terminal, action.PopUp("/admin/popup", "Popup Example"))
+	info.AddButton("info", icon.Terminal, action.PopUp("/admin/popup", "Popup Example",
+		func(ctx *context.Context) (success bool, data, msg string) {
+			return true, "<h2>hello world</h2>", ""
+		}))
+	info.AddButton("ajax", icon.Android, action.Ajax("/admin/ajax",
+		func(ctx *context.Context) (success bool, data, msg string) {
+			return true, "", "success"
+		}))
 
 	info.SetTable("users").SetTitle("Users").SetDescription("Users")
 
@@ -86,7 +94,7 @@ func GetUserTable() (userTable table.Table) {
 	formList.AddField("Phone", "phone", db.Varchar, form.Text)
 	formList.AddField("City", "city", db.Varchar, form.Text)
 	formList.AddField("Custom Field", "role", db.Varchar, form.Text).
-		FieldPostFilterFn(func(value types.PostFieldModel) string {
+		FieldPostFilterFn(func(value types.PostFieldModel) interface{} {
 			fmt.Println("user custom field", value)
 			return ""
 		})
