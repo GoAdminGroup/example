@@ -61,6 +61,10 @@ func GetUserTable() (userTable table.Table) {
 	info.AddField("UpdatedAt", "updated_at", db.Timestamp).FieldEditAble(editType.Datetime)
 
 	info.AddActionButton("google", action.Jump("https://google.com"))
+	info.AddActionButton("audit", action.Ajax("/admin/audit",
+		func(ctx *context.Context) (success bool, data, msg string) {
+			return true, "", "success"
+		}))
 	info.AddButton("google", icon.Google, action.Jump("https://google.com"))
 	info.AddButton("info", icon.Terminal, action.PopUp("/admin/popup", "Popup Example",
 		func(ctx *context.Context) (success bool, data, msg string) {
