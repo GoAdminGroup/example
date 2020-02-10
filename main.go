@@ -34,6 +34,7 @@ func main() {
 	// "user" => http://localhost:9033/admin/info/user
 	//
 	adminPlugin.AddGenerator("user", tables.GetUserTable)
+	adminPlugin.AddGenerator("external", tables.GetExternalTable)
 
 	// customize a plugin
 	// 自己定制一个插件👇
