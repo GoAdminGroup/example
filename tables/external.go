@@ -1,6 +1,7 @@
 package tables
 
 import (
+	"github.com/GoAdminGroup/go-admin/context"
 	"github.com/GoAdminGroup/go-admin/modules/db"
 	"github.com/GoAdminGroup/go-admin/plugins/admin/modules/parameter"
 	"github.com/GoAdminGroup/go-admin/plugins/admin/modules/table"
@@ -8,7 +9,7 @@ import (
 )
 
 // GetExternalTable return the model from external data source.
-func GetExternalTable() (externalTable table.Table) {
+func GetExternalTable(ctx *context.Context) (externalTable table.Table) {
 
 	externalTable = table.NewDefaultTable(table.DefaultConfig())
 
