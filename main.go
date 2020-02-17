@@ -1,12 +1,10 @@
 package main
 
 import (
-	"io/ioutil"
-	"net/http"
-
 	_ "github.com/GoAdminGroup/go-admin/adapter/gin"               // adapter
 	_ "github.com/GoAdminGroup/go-admin/modules/db/drivers/sqlite" // sql driver
 	_ "github.com/GoAdminGroup/themes/adminlte"                    // theme
+	"io/ioutil"
 
 	"github.com/GoAdminGroup/example/tables"
 	"github.com/GoAdminGroup/go-admin/engine"
@@ -83,40 +81,6 @@ func main() {
 	r.GET("/admin", func(ctx *gin.Context) {
 		engine.Content(ctx, func(ctx interface{}) (types.Panel, error) {
 			return DashboardPage()
-		})
-	})
-
-	r.GET("/admin/external_link", func(ctx *gin.Context) {
-		engine.Content(ctx, func(ctx interface{}) (types.Panel, error) {
-			return types.Panel{
-				Content: `<iframe style="width:100%;height:800px;" src="https://gitee.com/go-admin/go-admin"></iframe>`,
-			}, nil
-		})
-	})
-
-	r.POST("/admin/popup", func(ctx *gin.Context) {
-
-		user, ok := eng.User(ctx)
-
-		if !ok {
-			ctx.JSON(http.StatusOK, gin.H{
-				"code": 401,
-				"msg":  "auth fail",
-			})
-			return
-		}
-
-		if !user.CheckPermission("*") {
-			//ctx.JSON(http.StatusOK, gin.H{
-			//	"code": 401,
-			//	"msg":  "没有权限",
-			//})
-			//return
-		}
-
-		ctx.JSON(http.StatusOK, gin.H{
-			"code": 0,
-			"data": "<h2>hello world</h2>",
 		})
 	})
 
