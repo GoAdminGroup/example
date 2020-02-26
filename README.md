@@ -57,7 +57,7 @@ cd example
 govendor sync
 ```
 
-如果你在中国，因为各种原因导致用以上步骤进行下载安装依赖有问题，那么你可以直接从这里下载：[vendor.zip](http://file.go-admin.cn/go_admin/vendor/v1_2_2/vendor.zip)
+如果你在中国，因为各种原因导致用以上步骤进行下载安装依赖有问题，那么你可以直接从这里下载：[vendor.zip](http://file.go-admin.cn/go_admin/vendor/v1_2_3/vendor.zip)
 
 下载完解压到项目文件夹即可。
 

@@ -44,5 +44,19 @@ func GetExternalTable(ctx *context.Context) (externalTable table.Table) {
 
 	formList.SetTable("external").SetTitle("Externals").SetDescription("Externals")
 
+	detail := externalTable.GetDetail()
+
+	detail.SetTable("external").
+		SetTitle("Externals").
+		SetDescription("Externals").
+		SetGetDataFn(func(param parameter.Parameters) ([]map[string]interface{}, int) {
+			return []map[string]interface{}{
+				{
+					"id":    10,
+					"title": "this is a title",
+				},
+			}, 1
+		})
+
 	return
 }
