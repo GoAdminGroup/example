@@ -14,7 +14,7 @@ func GetExternalTable(ctx *context.Context) (externalTable table.Table) {
 	externalTable = table.NewDefaultTable(table.DefaultConfig())
 
 	info := externalTable.GetInfo()
-	info.AddField("ID", "id", db.Bigint).FieldSortable()
+	info.AddField("ID", "id", db.Int).FieldSortable()
 	info.AddField("Title", "title", db.Varchar)
 
 	info.SetTable("external").
