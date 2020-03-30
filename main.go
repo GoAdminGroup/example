@@ -1,7 +1,8 @@
 package main
 
 import (
-	_ "github.com/GoAdminGroup/go-admin/adapter/gin"               // adapter
+	_ "github.com/GoAdminGroup/go-admin/adapter/gin" // adapter
+	"github.com/GoAdminGroup/go-admin/context"
 	_ "github.com/GoAdminGroup/go-admin/modules/db/drivers/sqlite" // sql driver
 	_ "github.com/GoAdminGroup/themes/adminlte"                    // theme
 
@@ -75,10 +76,8 @@ func main() {
 	// customize your index pages
 	// 下面这样定制您的首页👇
 
-	r.GET("/admin", func(ctx *gin.Context) {
-		engine.Content(ctx, func(ctx interface{}) (types.Panel, error) {
-			return DashboardPage()
-		})
+	eng.HTML("GET", "/admin", func(ctx *context.Context) (panel types.Panel, e error) {
+		return DashboardPage()
 	})
 
 	_ = r.Run(":9033")
