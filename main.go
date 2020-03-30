@@ -4,7 +4,6 @@ import (
 	_ "github.com/GoAdminGroup/go-admin/adapter/gin"               // adapter
 	_ "github.com/GoAdminGroup/go-admin/modules/db/drivers/sqlite" // sql driver
 	_ "github.com/GoAdminGroup/themes/adminlte"                    // theme
-	"io/ioutil"
 
 	"github.com/GoAdminGroup/example/tables"
 	"github.com/GoAdminGroup/go-admin/engine"
@@ -14,6 +13,7 @@ import (
 	"github.com/GoAdminGroup/go-admin/template/chartjs"
 	"github.com/GoAdminGroup/go-admin/template/types"
 	"github.com/gin-gonic/gin"
+	"io/ioutil"
 )
 
 func main() {
