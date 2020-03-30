@@ -7,7 +7,6 @@ import (
 
 	"github.com/GoAdminGroup/example/tables"
 	"github.com/GoAdminGroup/go-admin/engine"
-	"github.com/GoAdminGroup/go-admin/plugins/admin"
 	"github.com/GoAdminGroup/go-admin/plugins/example"
 	"github.com/GoAdminGroup/go-admin/template"
 	"github.com/GoAdminGroup/go-admin/template/chartjs"
@@ -23,16 +22,6 @@ func main() {
 	gin.DefaultWriter = ioutil.Discard
 
 	eng := engine.Default()
-
-	adminPlugin := admin.NewAdmin(tables.Generators)
-
-	// add generator, first parameter is the url prefix of table when visit.
-	// example:
-	//
-	// "user" => http://localhost:9033/admin/info/user
-	//
-	adminPlugin.AddGenerator("user", tables.GetUserTable)
-	adminPlugin.AddGenerator("external", tables.GetExternalTable)
 
 	// customize a plugin
 	// 自己定制一个插件👇
@@ -68,7 +57,15 @@ func main() {
 	// eng.AddConfig(cfg)
 
 	if err := eng.AddConfigFromJSON("./config.json").
-		AddPlugins(adminPlugin, examplePlugin).
+		AddGenerators(tables.Generators).
+		// add generator, first parameter is the url prefix of table when visit.
+		// example:
+		//
+		// "user" => http://localhost:9033/admin/info/user
+		//
+		AddGenerator("user", tables.GetUserTable).
+		AddGenerator("external", tables.GetExternalTable).
+		AddPlugins(examplePlugin).
 		Use(r); err != nil {
 		panic(err)
 	}
