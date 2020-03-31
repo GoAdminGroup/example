@@ -1,14 +1,13 @@
 package main
 
 import (
-	_ "github.com/GoAdminGroup/go-admin/adapter/gin" // adapter
-	"github.com/GoAdminGroup/go-admin/context"
+	_ "github.com/GoAdminGroup/go-admin/adapter/gin"               // adapter
 	_ "github.com/GoAdminGroup/go-admin/modules/db/drivers/sqlite" // sql driver
 	_ "github.com/GoAdminGroup/themes/adminlte"                    // theme
 
 	"github.com/GoAdminGroup/example/tables"
+	"github.com/GoAdminGroup/go-admin/context"
 	"github.com/GoAdminGroup/go-admin/engine"
-	"github.com/GoAdminGroup/go-admin/plugins/example"
 	"github.com/GoAdminGroup/go-admin/template"
 	"github.com/GoAdminGroup/go-admin/template/chartjs"
 	"github.com/GoAdminGroup/go-admin/template/types"
@@ -24,11 +23,6 @@ func main() {
 
 	eng := engine.Default()
 
-	// customize a plugin
-	// 自己定制一个插件👇
-
-	examplePlugin := example.NewExample()
-
 	template.AddComp(chartjs.NewChart())
 
 	// you can also add config like:
@@ -36,14 +30,14 @@ func main() {
 	//
 	// import "github.com/GoAdminGroup/go-admin/modules/config"
 	//
-	// cfg := config.Config{
-	//	 Databases: config.DatabaseList{
+	//cfg := config.Config{
+	//	Databases: config.DatabaseList{
 	//		"default": {
 	//			Host:       "127.0.0.1",
 	//			Port:       "3306",
 	//			User:       "root",
 	//			Pwd:        "root",
-	//			Name:       "godmin",
+	//			Name:       "go-admin-demo",
 	//			MaxIdleCon: 50,
 	//			MaxOpenCon: 150,
 	//			Driver:     db.DriverMysql,
@@ -53,7 +47,7 @@ func main() {
 	//	IndexUrl:  "/",
 	//	Debug:     true,
 	//	Language:  language.CN,
-	// }
+	//}
 	//
 	// eng.AddConfig(cfg)
 
@@ -64,9 +58,8 @@ func main() {
 		//
 		// "user" => http://localhost:9033/admin/info/user
 		//
-		AddGenerator("user", tables.GetUserTable).
+		// AddGenerator("user", tables.GetUserTable).
 		AddGenerator("external", tables.GetExternalTable).
-		AddPlugins(examplePlugin).
 		Use(r); err != nil {
 		panic(err)
 	}
