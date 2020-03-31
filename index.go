@@ -1,6 +1,7 @@
 package main
 
 import (
+	"github.com/GoAdminGroup/go-admin/context"
 	tmpl "github.com/GoAdminGroup/go-admin/template"
 	"github.com/GoAdminGroup/go-admin/template/chartjs"
 	"github.com/GoAdminGroup/go-admin/template/icon"
@@ -15,7 +16,7 @@ import (
 )
 
 // GetContent return the content of index page.
-func DashboardPage() (types.Panel, error) {
+func DashboardPage(ctx *context.Context) (types.Panel, error) {
 
 	components := tmpl.Default()
 	colComp := components.Col()

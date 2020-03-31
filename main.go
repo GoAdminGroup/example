@@ -6,11 +6,9 @@ import (
 	_ "github.com/GoAdminGroup/themes/adminlte"                    // theme
 
 	"github.com/GoAdminGroup/example/tables"
-	"github.com/GoAdminGroup/go-admin/context"
 	"github.com/GoAdminGroup/go-admin/engine"
 	"github.com/GoAdminGroup/go-admin/template"
 	"github.com/GoAdminGroup/go-admin/template/chartjs"
-	"github.com/GoAdminGroup/go-admin/template/types"
 	"github.com/gin-gonic/gin"
 	"io/ioutil"
 )
@@ -69,9 +67,7 @@ func main() {
 	// customize your index pages
 	// 下面这样定制您的首页👇
 
-	eng.HTML("GET", "/admin", func(ctx *context.Context) (panel types.Panel, e error) {
-		return DashboardPage()
-	})
+	eng.HTML("GET", "/admin", DashboardPage)
 
 	_ = r.Run(":9033")
 }
