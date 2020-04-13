@@ -16,6 +16,8 @@ If you are Windows user, [go-sqlite-dirver](https://github.com/mattn/go-sqlite3)
 
 如果你是windows用户，那么你需要下载gcc，因为本例子使用的是sqlite数据库，如果你不想使用sqlite数据库，你可以换成mysql，则不需要下载gcc。
 
+劝退：没有计算机基础或基础比较差的请谨慎使用或不要使用orz。
+
 ## use go module 使用模块加载依赖
 
 To use go module, you should set GO111MODULE=on first.
@@ -57,7 +59,7 @@ cd example
 govendor sync
 ```
 
-如果你在中国，因为各种原因导致用以上步骤进行下载安装依赖有问题，那么你可以直接从这里下载：[vendor.zip](http://file.go-admin.cn/go_admin/vendor/v1_2_7/vendor.zip)
+如果你在中国，因为各种原因导致用以上步骤进行下载安装依赖有问题，那么你可以直接从这里下载：[vendor.zip](http://file.go-admin.cn/go_admin/vendor/v1_2_8/vendor.zip)
 
 下载完解压到项目文件夹即可。
 
