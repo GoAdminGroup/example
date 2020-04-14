@@ -1,10 +1,11 @@
 package main
 
 import (
-	_ "github.com/GoAdminGroup/go-admin/adapter/gin"              // web framework adapter
-	_ "github.com/GoAdminGroup/go-admin/modules/db/drivers/mysql" // sql driver
-	_ "github.com/GoAdminGroup/themes/adminlte"                   // ui theme
+	_ "github.com/GoAdminGroup/go-admin/adapter/gin"               // web framework adapter
+	_ "github.com/GoAdminGroup/go-admin/modules/db/drivers/sqlite" // sql driver
+	_ "github.com/GoAdminGroup/themes/adminlte"                    // ui theme
 
+	"github.com/GoAdminGroup/example/pages"
 	"github.com/GoAdminGroup/example/tables"
 	"github.com/GoAdminGroup/go-admin/engine"
 	"github.com/GoAdminGroup/go-admin/template"
@@ -30,7 +31,7 @@ func main() {
 	//			Port:       "3306",
 	//			User:       "root",
 	//			Pwd:        "root",
-	//			Name:       "gin-example-blogs",
+	//			Name:       "go-admin",
 	//			MaxIdleCon: 50,
 	//			MaxOpenCon: 150,
 	//			Driver:     db.DriverMysql,
@@ -44,6 +45,7 @@ func main() {
 
 	if err := eng.AddConfigFromJSON("./config.json").
 		AddGenerators(tables.Generators).
+		AddGenerator("external", tables.GetExternalTable).
 		Use(r); err != nil {
 		panic(err)
 	}
@@ -51,6 +53,11 @@ func main() {
 	r.Static("/uploads", "./uploads")
 
 	eng.HTML("GET", "/admin", DashboardPage)
+	eng.HTML("GET", "/admin/form", pages.GetFormContent)
+	eng.HTML("GET", "/admin/table", pages.GetTableContent)
+	eng.HTMLFile("GET", "/admin/hello", "./html/hello.tmpl", map[string]interface{}{
+		"msg": "Hello world",
+	})
 
 	_ = r.Run(":9033")
 }

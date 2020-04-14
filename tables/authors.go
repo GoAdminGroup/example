@@ -10,7 +10,7 @@ import (
 // GetAuthorsTable return the model of table author.
 func GetAuthorsTable(ctx *context.Context) (authorsTable table.Table) {
 
-	authorsTable = table.NewDefaultTable(table.DefaultConfig())
+	authorsTable = table.NewDefaultTable(table.DefaultConfigWithDriver("sqlite"))
 
 	// connect your custom connection
 	// authorsTable = table.NewDefaultTable(table.DefaultConfigWithDriverAndConnection("mysql", "admin"))

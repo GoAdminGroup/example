@@ -19,7 +19,7 @@ import (
 func GetUserTable(ctx *context.Context) (userTable table.Table) {
 
 	userTable = table.NewDefaultTable(table.Config{
-		Driver:     db.DriverMysql,
+		Driver:     db.DriverSqlite,
 		CanAdd:     true,
 		Editable:   true,
 		Deletable:  true,
