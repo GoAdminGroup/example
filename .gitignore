@@ -2,3 +2,5 @@
 build
 vendor/**
 !vendor/vendor.json
+local.mk
+build
