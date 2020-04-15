@@ -12,7 +12,7 @@
     "path": "./uploads",
     "prefix": "uploads"
   },
-  "language": "cn",
+  "language": "en",
   "index": "/",
   "debug": true,
   "color_scheme": "skin-black"

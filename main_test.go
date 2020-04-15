@@ -16,12 +16,9 @@ import (
 func TestDemoBlackBox(t *testing.T) {
 	tests.BlackBoxTestSuit(t, gin.NewHandler, config.DatabaseList{
 		"default": config.Database{
-			Host:   "127.0.0.1",
-			Port:   "3306",
-			User:   "root",
-			Pwd:    "root",
-			Name:   "go_admin_demo_test", // WARNING: test database name must contains "test"
-			Driver: "mysql",
+			File:   "./admin_test.db",
+			Driver: "sqlite",
+			Name:   "goadmin_test",
 		},
 	}, tables.Generators, func(cfg config.DatabaseList) {
 		// Data cleaner of the framework
@@ -43,8 +40,8 @@ func TestDemoUserAcceptance(t *testing.T) {
 		// Write test case base on chromedriver, for example:
 		// More usages: https://github.com/sclevine/agouti
 		page.NavigateTo("http://127.0.0.1:9033/admin")
-		page.Contain("username")
-		page.Click("")
+		//page.Contain("username")
+		//page.Click("")
 	}, func(quit chan struct{}) {
 		// start the server:
 		// ....
