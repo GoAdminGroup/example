@@ -1,4 +1,8 @@
 {
+  "debug": true,
+  "index": "/",
+  "prefix": "admin",
+  "language": "en",
   "database": {
     "default": {
       "max_idle_con": 50,
@@ -7,13 +11,13 @@
       "driver": "sqlite"
     }
   },
-  "prefix": "admin",
   "store": {
     "path": "./uploads",
     "prefix": "uploads"
   },
-  "language": "en",
-  "index": "/",
-  "debug": true,
+  "access_log_path": "./logs/access.log",
+  "error_log_path": "./logs/error.log",
+  "info_log_path": "./logs/info.log",
+  "theme": "adminlte",
   "color_scheme": "skin-black"
 }
