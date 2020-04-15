@@ -17,7 +17,14 @@ generate:
 	$(GOINSTALL) github.com/GoAdminGroup/go-admin/adm
 	$(CLI) generate -c adm_config.ini
 
-test:
+test: black-box-test user-acceptance-test
+
+black-box-test:
 	cp admin.db admin_test.db
-	$(GOTEST) .
+	$(GOTEST) -v -test.run=TestExampleBlackBox
+	rm admin_test.db
+
+user-acceptance-test:
+	cp admin.db admin_test.db
+	$(GOTEST) -v -test.run=TestExampleUserAcceptance
 	rm admin_test.db

@@ -13,12 +13,11 @@ import (
 )
 
 // Black box testing
-func TestDemoBlackBox(t *testing.T) {
+func TestExampleBlackBox(t *testing.T) {
 	tests.BlackBoxTestSuit(t, gin.NewHandler, config.DatabaseList{
 		"default": config.Database{
 			File:   "./admin_test.db",
 			Driver: "sqlite",
-			Name:   "goadmin_test",
 		},
 	}, tables.Generators, func(cfg config.DatabaseList) {
 		// Data cleaner of the framework
@@ -35,7 +34,7 @@ func TestDemoBlackBox(t *testing.T) {
 }
 
 // User acceptance testing
-func TestDemoUserAcceptance(t *testing.T) {
+func TestExampleUserAcceptance(t *testing.T) {
 	web.UserAcceptanceTestSuit(t, func(t *testing.T, page *web.Page) {
 		// Write test case base on chromedriver, for example:
 		// More usages: https://github.com/sclevine/agouti
