@@ -8,7 +8,6 @@ import (
 	"github.com/GoAdminGroup/go-admin/tests/frameworks/gin"
 	"github.com/GoAdminGroup/go-admin/tests/web"
 	"github.com/gavv/httpexpect"
-	"net/http"
 	"testing"
 )
 
@@ -29,7 +28,7 @@ func TestExampleBlackBox(t *testing.T) {
 		common.Test(e)
 		// Write your own API test, for example:
 		// More usages: https://github.com/gavv/httpexpect
-		e.POST("/signin").Expect().Status(http.StatusOK)
+		// e.POST("/signin").Expect().Status(http.StatusOK)
 	})
 }
 

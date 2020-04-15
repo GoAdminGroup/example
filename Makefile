@@ -19,12 +19,16 @@ generate:
 
 test: black-box-test user-acceptance-test
 
-black-box-test:
-	cp admin.db admin_test.db
+black-box-test: ready-for-data
 	$(GOTEST) -v -test.run=TestExampleBlackBox
-	rm admin_test.db
+	make clean
 
-user-acceptance-test:
-	cp admin.db admin_test.db
+user-acceptance-test: ready-for-data
 	$(GOTEST) -v -test.run=TestExampleUserAcceptance
+	make clean
+
+ready-for-data:
+	cp admin.db admin_test.db
+
+clean:
 	rm admin_test.db
