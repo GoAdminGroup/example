@@ -18,6 +18,7 @@
   "access_log": "./logs/access.log",
   "error_log": "./logs/error.log",
   "info_log": "./logs/info.log",
+  "access_assets_log_off": true,
   "theme": "adminlte",
   "color_scheme": "skin-black"
 }

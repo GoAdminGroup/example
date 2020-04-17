@@ -1,6 +1,7 @@
 package main
 
 import (
+	"github.com/GoAdminGroup/example/models"
 	_ "github.com/GoAdminGroup/go-admin/adapter/gin"               // web framework adapter
 	_ "github.com/GoAdminGroup/go-admin/modules/db/drivers/sqlite" // sql driver
 	_ "github.com/GoAdminGroup/themes/adminlte"                    // ui theme
@@ -15,10 +16,10 @@ import (
 )
 
 func main() {
-	r := gin.Default()
-
 	gin.SetMode(gin.ReleaseMode)
 	gin.DefaultWriter = ioutil.Discard
+
+	r := gin.Default()
 
 	eng := engine.Default()
 
@@ -46,13 +47,16 @@ func main() {
 	if err := eng.AddConfigFromJSON("./config.json").
 		AddGenerators(tables.Generators).
 		AddGenerator("external", tables.GetExternalTable).
+		ResolveSqliteConnection(models.SetConn).
 		Use(r); err != nil {
 		panic(err)
 	}
 
+	models.Init()
+
 	r.Static("/uploads", "./uploads")
 
-	eng.HTML("GET", "/admin", DashboardPage)
+	eng.HTML("GET", "/admin", pages.DashboardPage)
 	eng.HTML("GET", "/admin/form", pages.GetFormContent)
 	eng.HTML("GET", "/admin/table", pages.GetTableContent)
 	eng.HTMLFile("GET", "/admin/hello", "./html/hello.tmpl", map[string]interface{}{

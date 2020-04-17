@@ -1,6 +1,7 @@
-package main
+package pages
 
 import (
+	"github.com/GoAdminGroup/example/models"
 	"github.com/GoAdminGroup/go-admin/context"
 	tmpl "github.com/GoAdminGroup/go-admin/template"
 	"github.com/GoAdminGroup/go-admin/template/chartjs"
@@ -21,6 +22,8 @@ func DashboardPage(ctx *context.Context) (types.Panel, error) {
 	components := tmpl.Default()
 	colComp := components.Col()
 
+	statics := models.FirstStatics()
+
 	/**************************
 	 * Info Box
 	/**************************/
@@ -28,28 +31,28 @@ func DashboardPage(ctx *context.Context) (types.Panel, error) {
 	infobox1 := infobox.New().
 		SetText("CPU TRAFFIC").
 		SetColor("aqua").
-		SetNumber("100").
+		SetNumber(statics.CPUTmpl()).
 		SetIcon("ion-ios-gear-outline").
 		GetContent()
 
 	infobox2 := infobox.New().
 		SetText("Likes").
 		SetColor("red").
-		SetNumber("1030.00<small>$</small>").
+		SetNumber(statics.LikesTmpl() + "<small>$</small>").
 		SetIcon(icon.GooglePlus).
 		GetContent()
 
 	infobox3 := infobox.New().
 		SetText("Sales").
 		SetColor("green").
-		SetNumber("760").
+		SetNumber(statics.SalesTmpl()).
 		SetIcon("ion-ios-cart-outline").
 		GetContent()
 
 	infobox4 := infobox.New().
 		SetText("New Members").
 		SetColor("yellow").
-		SetNumber("2,349").
+		SetNumber(statics.NewMembersTmpl()).
 		SetIcon("ion-ios-people-outline"). // svg is ok
 		GetContent()
 
