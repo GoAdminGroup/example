@@ -5,6 +5,7 @@ import (
 	"github.com/GoAdminGroup/go-admin/context"
 	tmpl "github.com/GoAdminGroup/go-admin/template"
 	"github.com/GoAdminGroup/go-admin/template/chartjs"
+	"github.com/GoAdminGroup/go-admin/template/color"
 	"github.com/GoAdminGroup/go-admin/template/icon"
 	"github.com/GoAdminGroup/go-admin/template/types"
 	"github.com/GoAdminGroup/themes/adminlte/components/chart_legend"
@@ -30,30 +31,30 @@ func DashboardPage(ctx *context.Context) (types.Panel, error) {
 
 	infobox1 := infobox.New().
 		SetText("CPU TRAFFIC").
-		SetColor("aqua").
+		SetColor(color.Aqua).
 		SetNumber(statics.CPUTmpl()).
 		SetIcon("ion-ios-gear-outline").
 		GetContent()
 
 	infobox2 := infobox.New().
 		SetText("Likes").
-		SetColor("red").
+		SetColor(color.Red).
 		SetNumber(statics.LikesTmpl() + "<small>$</small>").
 		SetIcon(icon.GooglePlus).
 		GetContent()
 
 	infobox3 := infobox.New().
 		SetText("Sales").
-		SetColor("green").
+		SetColor(color.Green).
 		SetNumber(statics.SalesTmpl()).
 		SetIcon("ion-ios-cart-outline").
 		GetContent()
 
 	infobox4 := infobox.New().
 		SetText("New Members").
-		SetColor("yellow").
+		SetColor(color.Yellow).
 		SetNumber(statics.NewMembersTmpl()).
-		SetIcon("ion-ios-people-outline"). // svg is ok
+		SetIcon("ion-ios-people-outline").
 		GetContent()
 
 	var size = types.SizeMD(3).SM(6).XS(12)
