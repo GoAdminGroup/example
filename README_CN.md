@@ -26,7 +26,7 @@ git clone https://github.com/GoAdminGroup/example.git
 
 ```shell
 cd example
-GO111MODULE=on go run .
+GOPROXY=https://goproxy.cn GO111MODULE=on go run .
 ```
 
 访问: [http://localhost:9033/admin](http://localhost:9033/admin)
