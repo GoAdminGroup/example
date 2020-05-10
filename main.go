@@ -1,11 +1,11 @@
 package main
 
 import (
-	"github.com/GoAdminGroup/example/models"
 	_ "github.com/GoAdminGroup/go-admin/adapter/gin"               // web framework adapter
 	_ "github.com/GoAdminGroup/go-admin/modules/db/drivers/sqlite" // sql driver
 	_ "github.com/GoAdminGroup/themes/adminlte"                    // ui theme
 
+	"github.com/GoAdminGroup/example/models"
 	"github.com/GoAdminGroup/example/pages"
 	"github.com/GoAdminGroup/example/tables"
 	"github.com/GoAdminGroup/go-admin/engine"

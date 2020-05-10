@@ -45,6 +45,8 @@ github.com/GoAdminGroup/go-admin v1.2.9-0.20200415032047-1a9acc84976e h1:KT+5dlK
 github.com/GoAdminGroup/go-admin v1.2.9-0.20200415032047-1a9acc84976e/go.mod h1:9Kk8rbrMUUiKQCRaAtdV1aHOTHaqzeyjChq9ykQ76Rg=
 github.com/GoAdminGroup/go-admin v1.2.9 h1:wLFhbtSmeHaMgN7qdrzo1ZtTcwS3LyZAVEZTfJPRMJ8=
 github.com/GoAdminGroup/go-admin v1.2.9/go.mod h1:7T4oDolkEtLJNnkdZqqENr2ehcxzy0XWQUnuZ8Ym0uE=
+github.com/GoAdminGroup/go-admin v1.2.10 h1:NsZZGMb16pvYpyIHwPef4SPzGEcmLvPyREjXgOlMAUw=
+github.com/GoAdminGroup/go-admin v1.2.10/go.mod h1:I392koJz0AurjYn95iA4PBpI8x0xErC8Vl5Wst4suvA=
 github.com/GoAdminGroup/html v0.0.1 h1:SdWNWl4OKPsvDk2GDp5ZKD6ceWoN8n4Pj6cUYxavUd0=
 github.com/GoAdminGroup/html v0.0.1/go.mod h1:A1laTJaOx8sQ64p2dE8IqtstDeCNBHEazrEp7hR5VvM=
 github.com/GoAdminGroup/themes v0.0.3 h1:50ocXcqaCicvJrVuZLIlLjJvhBdjw3zg/T5kLifAU3M=
@@ -95,6 +97,8 @@ github.com/GoAdminGroup/themes v0.0.30 h1:rF/++U0o1vH9589uJ22H6OZw+WxuwB8vtSoti9
 github.com/GoAdminGroup/themes v0.0.30/go.mod h1:ABCOeBeibfg9DxAsGVa1NzYK9/nIbHT/BuFrCRIKo8A=
 github.com/GoAdminGroup/themes v0.0.31 h1:HrvSHY7L4m3XPp9lKg/+GOk65teiPlC0tZa8MO0ZnO8=
 github.com/GoAdminGroup/themes v0.0.31/go.mod h1:ABCOeBeibfg9DxAsGVa1NzYK9/nIbHT/BuFrCRIKo8A=
+github.com/GoAdminGroup/themes v0.0.32 h1:2JaVjHmwKB6xEQd7M3M+KlV32zoe5blbxk6hT7d5i7o=
+github.com/GoAdminGroup/themes v0.0.32/go.mod h1:ABCOeBeibfg9DxAsGVa1NzYK9/nIbHT/BuFrCRIKo8A=
 github.com/NebulousLabs/fastrand v0.0.0-20181203155948-6fb6489aac4e h1:n+DcnTNkQnHlwpsrHoQtkrJIO7CBx029fw6oR4vIob4=
 github.com/NebulousLabs/fastrand v0.0.0-20181203155948-6fb6489aac4e/go.mod h1:Bdzq+51GR4/0DIhaICZEOm+OHvXGwwB2trKZ8B4Y6eQ=
 github.com/davecgh/go-spew v1.1.0/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
