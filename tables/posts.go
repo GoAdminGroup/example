@@ -18,15 +18,28 @@ func GetPostsTable(ctx *context.Context) (postsTable table.Table) {
 	info := postsTable.GetInfo()
 	info.AddField("ID", "id", db.Int).FieldSortable()
 	info.AddField("Title", "title", db.Varchar)
-	info.AddField("AuthorID", "author_id", db.Varchar).FieldDisplay(func(value types.FieldModel) interface{} {
+	info.AddField("AuthorID", "author_id", db.Int).FieldDisplay(func(value types.FieldModel) interface{} {
 		return template.Default().
 			Link().
-			SetURL("/admin/info/authors/detail?__goadmin_detail_pk=100").
-			SetContent("100").
+			SetURL("/admin/info/authors/detail?__goadmin_detail_pk=" + value.Value).
+			SetContent(template.HTML(value.Value)).
 			OpenInNewTab().
-			SetTabTitle("Author Detail").
+			SetTabTitle(template.HTML("Author Detail(" + value.Value + ")")).
 			GetContent()
 	})
+	info.AddField("AuthorName", "name", db.Varchar).FieldDisplay(func(value types.FieldModel) interface{} {
+		return value.Row["authors_goadmin_join_first_name"].(string) + " " + value.Row["authors_goadmin_join_last_name"].(string)
+	})
+	info.AddField("AuthorFirstName", "first_name", db.Varchar).FieldJoin(types.Join{
+		Field:     "author_id",
+		JoinField: "id",
+		Table:     "authors",
+	}).FieldHide()
+	info.AddField("AuthorLastName", "last_name", db.Varchar).FieldJoin(types.Join{
+		Field:     "author_id",
+		JoinField: "id",
+		Table:     "authors",
+	}).FieldHide()
 	info.AddField("Description", "description", db.Varchar)
 	info.AddField("Content", "content", db.Varchar).FieldEditAble(editType.Textarea)
 	info.AddField("Date", "date", db.Varchar)
@@ -37,7 +50,7 @@ func GetPostsTable(ctx *context.Context) (postsTable table.Table) {
 	formList.AddField("ID", "id", db.Int, form.Default).FieldNotAllowEdit().FieldNotAllowAdd()
 	formList.AddField("Title", "title", db.Varchar, form.Text)
 	formList.AddField("Description", "description", db.Varchar, form.Text)
-	formList.AddField("Content", "content", db.Varchar, form.Text)
+	formList.AddField("Content", "content", db.Varchar, form.RichText).FieldEnableFileUpload()
 	formList.AddField("Date", "date", db.Varchar, form.Datetime)
 
 	formList.SetTable("posts").SetTitle("Posts").SetDescription("Posts")

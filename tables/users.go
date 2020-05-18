@@ -31,7 +31,7 @@ func GetUserTable(ctx *context.Context) (userTable table.Table) {
 		},
 	})
 
-	info := userTable.GetInfo().SetFilterFormLayout(form.LayoutTwoCol)
+	info := userTable.GetInfo().SetFilterFormLayout(form.LayoutThreeCol)
 	info.AddField("ID", "id", db.Int).FieldSortable()
 	info.AddField("Name", "name", db.Varchar).FieldEditAble(editType.Text).
 		FieldFilterable(types.FilterType{Operator: types.FilterOperatorLike})
@@ -43,13 +43,20 @@ func GetUserTable(ctx *context.Context) (userTable table.Table) {
 			return "women"
 		}
 		return "unknown"
-	}).FieldEditAble(editType.Select).FieldEditOptions(types.FieldOptions{
-		{Value: "0", Text: "men"},
-		{Value: "1", Text: "women"},
+	}).FieldEditAble(editType.Switch).FieldEditOptions(types.FieldOptions{
+		{Value: "0", Text: "👨"},
+		{Value: "1", Text: "👩"},
 	}).FieldFilterable(types.FilterType{FormType: form.SelectSingle}).FieldFilterOptions(types.FieldOptions{
 		{Value: "0", Text: "men"},
 		{Value: "1", Text: "women"},
 	})
+	info.AddColumn("personality", func(value types.FieldModel) interface{} {
+		return "handsome"
+	})
+	info.AddColumnButtons("see more", types.GetColumnButton("more", icon.Info,
+		action.PopUp("/see/more/example", "Detail", func(ctx *context.Context) (success bool, msg string, data interface{}) {
+			return true, "ok", "<h1>Detail</h1><p>balabala</p><p>this feature will be released in v1.2.7</p>"
+		})))
 	info.AddField("Phone", "phone", db.Varchar).FieldFilterable()
 	info.AddField("City", "city", db.Varchar).FieldFilterable()
 	info.AddField("Avatar", "avatar", db.Varchar).FieldDisplay(func(value types.FieldModel) interface{} {
@@ -66,15 +73,25 @@ func GetUserTable(ctx *context.Context) (userTable table.Table) {
 		func(ctx *context.Context) (success bool, msg string, data interface{}) {
 			return true, "success", ""
 		}))
-	info.AddButton("google", icon.Google, action.Jump("https://google.com"))
-	info.AddButton("info", icon.Terminal, action.PopUp("/admin/popup", "Popup Example",
+	info.AddActionButton("Preview", action.PopUp("/admin/preview", "Preview",
 		func(ctx *context.Context) (success bool, msg string, data interface{}) {
 			return true, "", "<h2>hello world</h2>"
 		}))
+	info.AddButton("google", icon.Google, action.Jump("https://google.com"))
+	info.AddButton("popup", icon.Terminal, action.PopUp("/admin/popup", "Popup Example",
+		func(ctx *context.Context) (success bool, msg string, data interface{}) {
+			return true, "", "<h2>hello world</h2>"
+		}))
+	info.AddButton("iframe", icon.Tv, action.PopUpWithIframe("/admin/iframe", "Iframe Example",
+		action.IframeData{Src: "/admin/info/profile/new"}, "900px", "600px"))
 	info.AddButton("ajax", icon.Android, action.Ajax("/admin/ajax",
 		func(ctx *context.Context) (success bool, msg string, data interface{}) {
 			return true, "success", ""
 		}))
+	info.AddSelectBox("gender", types.FieldOptions{
+		{Value: "0", Text: "men"},
+		{Value: "1", Text: "women"},
+	}, action.FieldFilter("gender"))
 
 	info.SetTable("users").SetTitle("Users").SetDescription("Users")
 

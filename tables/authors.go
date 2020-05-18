@@ -4,6 +4,9 @@ import (
 	"github.com/GoAdminGroup/go-admin/context"
 	"github.com/GoAdminGroup/go-admin/modules/db"
 	"github.com/GoAdminGroup/go-admin/plugins/admin/modules/table"
+	"github.com/GoAdminGroup/go-admin/template/icon"
+	"github.com/GoAdminGroup/go-admin/template/types"
+	"github.com/GoAdminGroup/go-admin/template/types/action"
 	"github.com/GoAdminGroup/go-admin/template/types/form"
 )
 
@@ -17,12 +20,19 @@ func GetAuthorsTable(ctx *context.Context) (authorsTable table.Table) {
 
 	info := authorsTable.GetInfo()
 	info.AddField("ID", "id", db.Int).FieldSortable()
-	info.AddField("First Name", "first_name", db.Varchar)
-	info.AddField("Last Name", "last_name", db.Varchar)
+	info.AddField("First Name", "first_name", db.Varchar).FieldHide()
+	info.AddField("Last Name", "last_name", db.Varchar).FieldHide()
+	info.AddField("Name", "name", db.Varchar).FieldDisplay(func(value types.FieldModel) interface{} {
+		first, _ := value.Row["first_name"].(string)
+		last, _ := value.Row["last_name"].(string)
+		return first + " " + last
+	})
 	info.AddField("Email", "email", db.Varchar)
 	info.AddField("Birthdate", "birthdate", db.Date)
 	info.AddField("Added", "added", db.Timestamp)
 
+	info.AddButton("Articles", icon.Tv, action.PopUpWithIframe("/authors/list", "文章",
+		action.IframeData{Src: "/admin/info/posts"}, "900px", "560px"))
 	info.SetTable("authors").SetTitle("Authors").SetDescription("Authors")
 
 	formList := authorsTable.GetForm()
