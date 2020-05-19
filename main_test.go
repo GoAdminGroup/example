@@ -8,6 +8,7 @@ import (
 	"github.com/GoAdminGroup/go-admin/tests/frameworks/gin"
 	"github.com/GoAdminGroup/go-admin/tests/web"
 	"github.com/gavv/httpexpect"
+	"log"
 	"testing"
 )
 
@@ -43,5 +44,8 @@ func TestExampleUserAcceptance(t *testing.T) {
 	}, func(quit chan struct{}) {
 		// start the server:
 		// ....
+		go startServer()
+		<-quit
+		log.Print("test quit")
 	}, true) // if local parameter is true, it will not be headless, and window not close when finishing tests.
 }

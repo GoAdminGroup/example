@@ -23,6 +23,10 @@ import (
 )
 
 func main() {
+	startServer()
+}
+
+func startServer() {
 	gin.SetMode(gin.ReleaseMode)
 	gin.DefaultWriter = ioutil.Discard
 
