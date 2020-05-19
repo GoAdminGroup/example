@@ -1,6 +1,14 @@
 package main
 
 import (
+	"context"
+	"io/ioutil"
+	"log"
+	"net/http"
+	"os"
+	"os/signal"
+	"time"
+
 	_ "github.com/GoAdminGroup/go-admin/adapter/gin"               // web framework adapter
 	_ "github.com/GoAdminGroup/go-admin/modules/db/drivers/sqlite" // sql driver
 	_ "github.com/GoAdminGroup/themes/adminlte"                    // ui theme
@@ -12,7 +20,6 @@ import (
 	"github.com/GoAdminGroup/go-admin/template"
 	"github.com/GoAdminGroup/go-admin/template/chartjs"
 	"github.com/gin-gonic/gin"
-	"io/ioutil"
 )
 
 func main() {
@@ -63,5 +70,25 @@ func main() {
 		"msg": "Hello world",
 	})
 
-	_ = r.Run(":9033")
+	srv := &http.Server{
+		Addr:    ":9033",
+		Handler: r,
+	}
+
+	go func() {
+		if err := srv.ListenAndServe(); err != nil {
+			log.Printf("listen: %s\n", err)
+		}
+	}()
+
+	quit := make(chan os.Signal)
+	signal.Notify(quit, os.Interrupt)
+	<-quit
+
+	ctx, cancel := context.WithTimeout(context.Background(), 5*time.Second)
+	defer cancel()
+	if err := srv.Shutdown(ctx); err != nil {
+		log.Fatal("Server Shutdown:", err)
+	}
+	log.Println("Server exiting")
 }
