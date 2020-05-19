@@ -10,7 +10,6 @@ import (
 	"github.com/GoAdminGroup/go-admin/template/icon"
 	"github.com/GoAdminGroup/go-admin/template/types"
 	"github.com/GoAdminGroup/go-admin/template/types/form"
-	"html/template"
 )
 
 func GetFormContent(ctx *context.Context) (types.Panel, error) {
@@ -162,19 +161,12 @@ func main() {
 		}).
 		SetOperationFooter(col1 + col2)
 
-	popup := components.Popup().SetID("code_modal").
-		SetHideFooter().
-		SetTitle("Code").
-		SetHeight("300px").
-		SetBody(template.HTML("")).
-		GetContent()
-
 	return types.Panel{
 		Content: components.Box().
 			SetHeader(aform.GetDefaultBoxHeader(true)).
 			WithHeadBorder().
 			SetBody(aform.GetContent()).
-			GetContent() + popup,
+			GetContent(),
 		Title:       "Form",
 		Description: "form example",
 	}, nil
