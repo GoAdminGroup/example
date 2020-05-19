@@ -32,3 +32,5 @@ ready-for-data:
 
 clean:
 	rm admin_test.db
+
+.PHONY: all serve build generate test black-box-test user-acceptance-test ready-for-data clean
