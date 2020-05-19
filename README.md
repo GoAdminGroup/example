@@ -1,5 +1,7 @@
 # GoAdmin Example
 
+[中文说明](./README_CN.md)
+
 A example show how to run go-admin. Just for reference, [here](http://www.go-admin.cn/en) to know more.
 
 Following three ways to run the code.
