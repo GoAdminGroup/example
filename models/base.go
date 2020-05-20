@@ -6,17 +6,12 @@ import (
 )
 
 var (
-	conn db.Connection
-	orm  *gorm.DB
+	orm *gorm.DB
 	err error
 )
 
-func SetConn(c db.Connection) {
-	conn = c
-}
-
-func Init() {
-	orm, err = gorm.Open("sqlite", conn.GetDB("default"))
+func Init(c db.Connection) {
+	orm, err = gorm.Open("sqlite", c.GetDB("default"))
 
 	if err != nil {
 		panic("initialize orm failed")

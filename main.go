@@ -58,12 +58,11 @@ func startServer() {
 	if err := eng.AddConfigFromJSON("./config.json").
 		AddGenerators(tables.Generators).
 		AddGenerator("external", tables.GetExternalTable).
-		ResolveSqliteConnection(models.SetConn).
 		Use(r); err != nil {
 		panic(err)
 	}
 
-	models.Init()
+	models.Init(eng.SqliteConnection())
 
 	r.Static("/uploads", "./uploads")
 
