@@ -11,7 +11,7 @@ var (
 )
 
 func Init(c db.Connection) {
-	orm, err = gorm.Open("sqlite", c.GetDB("default"))
+	orm, err = gorm.Open("sqlite3", c.GetDB("default"))
 
 	if err != nil {
 		panic("initialize orm failed")
