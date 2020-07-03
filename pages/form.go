@@ -168,6 +168,7 @@ func main() {
 			SetBody(aform.GetContent()).
 			GetContent(),
 		Title:       "Form",
+		Callbacks:   panel.Callbacks,
 		Description: "form example",
 	}, nil
 }
