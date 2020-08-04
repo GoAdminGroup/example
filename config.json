@@ -20,5 +20,6 @@
   "info_log": "./logs/info.log",
   "access_assets_log_off": true,
   "theme": "adminlte",
+  "bootstrap_file_path": "./bootstrap.go",
   "color_scheme": "skin-black"
 }
