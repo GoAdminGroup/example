@@ -1,6 +1,8 @@
 package pages
 
 import (
+	"html/template"
+
 	"github.com/GoAdminGroup/example/models"
 	"github.com/GoAdminGroup/go-admin/context"
 	tmpl "github.com/GoAdminGroup/go-admin/template"
@@ -14,7 +16,6 @@ import (
 	"github.com/GoAdminGroup/themes/adminlte/components/productlist"
 	"github.com/GoAdminGroup/themes/adminlte/components/progress_group"
 	"github.com/GoAdminGroup/themes/adminlte/components/smallbox"
-	"html/template"
 )
 
 // GetContent return the content of index page.
