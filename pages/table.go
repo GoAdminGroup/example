@@ -42,7 +42,7 @@ func GetTableContent(ctx *context.Context) (types.Panel, error) {
 	allBtns := make(types.Buttons, 0)
 
 	// Add a ajax button action
-	allBtns = append(allBtns, types.GetDefaultButton("Btn Here", icon.ArrowLeft, action.Ajax("ajax_id",
+	allBtns = append(allBtns, types.GetDefaultButton("Click me", icon.ArrowLeft, action.Ajax("ajax_id",
 		func(ctx *context.Context) (success bool, msg string, data interface{}) {
 			fmt.Println("ctx request", ctx.FormValue("id"))
 			return true, "ok", nil

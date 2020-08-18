@@ -9,10 +9,14 @@ github.com/BurntSushi/toml v0.3.1 h1:WXkYYl6Yr3qBf1K79EBnL4mak0OimBfB0XUf9Vl28OQ
 github.com/BurntSushi/toml v0.3.1/go.mod h1:xHWCNGjB5oqiDr8zfno3MHue2Ht5sIBksp03qcyfWMU=
 github.com/GoAdminGroup/go-admin v1.2.15 h1:cnsPNfvWPO6raADhueBGHxd196ycUroRRBSyrzWuvBQ=
 github.com/GoAdminGroup/go-admin v1.2.15/go.mod h1:EX+fDr3yPIQ8jKoXzjh5A8MbhfCY2KOhcd0rctlxBH4=
+github.com/GoAdminGroup/go-admin v1.2.16 h1:RXHM/KWzS3vLTs6c2SCS5Q/NC976ONLVSyaSDgjU/bE=
+github.com/GoAdminGroup/go-admin v1.2.16/go.mod h1:EX+fDr3yPIQ8jKoXzjh5A8MbhfCY2KOhcd0rctlxBH4=
 github.com/GoAdminGroup/html v0.0.1 h1:SdWNWl4OKPsvDk2GDp5ZKD6ceWoN8n4Pj6cUYxavUd0=
 github.com/GoAdminGroup/html v0.0.1/go.mod h1:A1laTJaOx8sQ64p2dE8IqtstDeCNBHEazrEp7hR5VvM=
 github.com/GoAdminGroup/themes v0.0.38 h1:McFCr2649Sy24ZjMf0vB23a5sc02m5C63dMeHhsb4mI=
 github.com/GoAdminGroup/themes v0.0.38/go.mod h1:ABCOeBeibfg9DxAsGVa1NzYK9/nIbHT/BuFrCRIKo8A=
+github.com/GoAdminGroup/themes v0.0.39 h1:lBK8po671DWeXDp2pNimsZh5kP+hI68HV2kRuPGiM+c=
+github.com/GoAdminGroup/themes v0.0.39/go.mod h1:ABCOeBeibfg9DxAsGVa1NzYK9/nIbHT/BuFrCRIKo8A=
 github.com/NebulousLabs/fastrand v0.0.0-20181203155948-6fb6489aac4e h1:n+DcnTNkQnHlwpsrHoQtkrJIO7CBx029fw6oR4vIob4=
 github.com/NebulousLabs/fastrand v0.0.0-20181203155948-6fb6489aac4e/go.mod h1:Bdzq+51GR4/0DIhaICZEOm+OHvXGwwB2trKZ8B4Y6eQ=
 github.com/OneOfOne/xxhash v1.2.2/go.mod h1:HSdplMjZKSmBqAxg5vPj2TmRDmfkzw+cTzAElWljhcU=

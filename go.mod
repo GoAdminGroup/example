@@ -3,8 +3,8 @@ module github.com/GoAdminGroup/example
 go 1.13
 
 require (
-	github.com/GoAdminGroup/go-admin v1.2.15
-	github.com/GoAdminGroup/themes v0.0.38
+	github.com/GoAdminGroup/go-admin v1.2.16
+	github.com/GoAdminGroup/themes v0.0.39
 	github.com/ajg/form v1.5.1 // indirect
 	github.com/buaazp/fasthttprouter v0.1.1 // indirect
 	github.com/fasthttp-contrib/websocket v0.0.0-20160511215533-1f3b11f56072 // indirect
