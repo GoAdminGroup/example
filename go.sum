@@ -21,6 +21,8 @@ github.com/GoAdminGroup/go-admin v1.2.20 h1:2CkhOC9Oy10si/bQ4Euvs7Pq/CnFzX3p1yBP
 github.com/GoAdminGroup/go-admin v1.2.20/go.mod h1:EX+fDr3yPIQ8jKoXzjh5A8MbhfCY2KOhcd0rctlxBH4=
 github.com/GoAdminGroup/go-admin v1.2.21 h1:iSkY6nmVP9GGlFOfYQdbIoY/wCJRgUecthdUQAwEKZA=
 github.com/GoAdminGroup/go-admin v1.2.21/go.mod h1:EX+fDr3yPIQ8jKoXzjh5A8MbhfCY2KOhcd0rctlxBH4=
+github.com/GoAdminGroup/go-admin v1.2.22 h1:G3TOPKsUVBJDd4kHpS4LqWT6n3e9AbBei07YdnlqHpk=
+github.com/GoAdminGroup/go-admin v1.2.22/go.mod h1:EX+fDr3yPIQ8jKoXzjh5A8MbhfCY2KOhcd0rctlxBH4=
 github.com/GoAdminGroup/html v0.0.1 h1:SdWNWl4OKPsvDk2GDp5ZKD6ceWoN8n4Pj6cUYxavUd0=
 github.com/GoAdminGroup/html v0.0.1/go.mod h1:A1laTJaOx8sQ64p2dE8IqtstDeCNBHEazrEp7hR5VvM=
 github.com/GoAdminGroup/themes v0.0.38 h1:McFCr2649Sy24ZjMf0vB23a5sc02m5C63dMeHhsb4mI=
