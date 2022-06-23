@@ -15,13 +15,13 @@ To use go module, you should set GO111MODULE=on first.
 ### step 1
 
 ```shell
-git clone https://github.com/GoAdminGroup/example.git
+git clone https://github.com/jvcss/go.git
 ```
 
 ### step 2
 
 ```shell
-cd example
+cd go
 GO111MODULE=on go run .
 ```
 
@@ -34,13 +34,13 @@ To use go path, you should set GO111MODULE=off first.
 ### step 1
 
 ```shell
-git clone https://github.com/GoAdminGroup/example.git
+git clone https://github.com/jvcss/go.git
 ```
 
 ### step 2
 
 ```shell
-go get github.com/kardianos/govendor
+go get github.com/jvcss/govendor
 cd example
 govendor sync
 ```
@@ -58,20 +58,20 @@ visit: [http://localhost:9033/admin](http://localhost:9033/admin)
 ### step 1
 
 ```shell
-git clone https://github.com/GoAdminGroup/example.git
+git clone https://github.com/jvcss/go.git
 ```
 
 ### step 2
 
 ```shell
-cd example
-docker build -t go-admin-example .
+cd go
+docker build -t go-admin .
 ```
 
 ### step 3
 
 ```shell
-docker attach $(docker run -p 9033:9033 -it -d go-admin-example /bin/bash -c "cd /go/src/app && GOPROXY=http://goproxy.cn GO111MODULE=on go run .")
+docker attach $(docker run -p 9033:9033 -it -d go-admin /bin/bash -c "cd /go/src/app && GOPROXY=http://goproxy.cn GO111MODULE=on go run .")
 ```
 
 visit: [http://localhost:9033/admin](http://localhost:9033/admin)
