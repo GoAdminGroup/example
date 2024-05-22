@@ -13,10 +13,10 @@ import (
 // GetAuthorsTable return the model of table author.
 func GetAuthorsTable(ctx *context.Context) (authorsTable table.Table) {
 
-	authorsTable = table.NewDefaultTable(table.DefaultConfigWithDriver("sqlite"))
+	authorsTable = table.NewDefaultTable(ctx, table.DefaultConfigWithDriver("sqlite"))
 
 	// connect your custom connection
-	// authorsTable = table.NewDefaultTable(table.DefaultConfigWithDriverAndConnection("mysql", "admin"))
+	// authorsTable = table.NewDefaultTable(ctx, table.DefaultConfigWithDriverAndConnection("mysql", "admin"))
 
 	info := authorsTable.GetInfo()
 	info.AddField("ID", "id", db.Int).FieldSortable()
@@ -31,8 +31,8 @@ func GetAuthorsTable(ctx *context.Context) (authorsTable table.Table) {
 	info.AddField("Birthdate", "birthdate", db.Date)
 	info.AddField("Added", "added", db.Timestamp)
 
-	info.AddButton("Articles", icon.Tv, action.PopUpWithIframe("/authors/list", "文章",
-		action.IframeData{Src: "/admin/info/posts"}, "900px", "560px"))
+	info.AddButton(ctx, "Articles", icon.Tv, 
+		action.PopUpWithIframe("/authors/list", "文章", action.IframeData{Src: "/admin/info/posts"}, "900px", "560px"))
 	info.SetTable("authors").SetTitle("Authors").SetDescription("Authors")
 
 	formList := authorsTable.GetForm()

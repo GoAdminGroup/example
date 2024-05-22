@@ -31,36 +31,6 @@ GOPROXY=https://goproxy.cn GO111MODULE=on go run .
 
 访问: [http://localhost:9033/admin](http://localhost:9033/admin)
 
-### 使用GOPATH加载依赖
-
-使用 go path的话，需要先设置环境变量```GO111MODULE```为```off```
-
-#### 第一步
-
-```shell
-git clone https://github.com/GoAdminGroup/example.git
-```
-
-#### 第二步
-
-```shell
-go get github.com/kardianos/govendor
-cd example
-govendor sync
-```
-
-如果你在中国，因为各种原因导致用以上步骤进行下载安装依赖有问题，那么你可以直接从这里下载：[vendor.zip](http://file.go-admin.cn/go_admin/vendor/v1_2_23/vendor.zip)
-
-下载完解压到项目文件夹即可。
-
-#### 第三步
-
-```shell
-go run .
-```
-
-访问: [http://localhost:9033/admin](http://localhost:9033/admin)
-
 ### use docker 使用docker
 
 #### 第一步

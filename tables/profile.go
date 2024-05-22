@@ -13,7 +13,7 @@ import (
 
 func GetProfileTable(ctx *context.Context) table.Table {
 
-	profile := table.NewDefaultTable(table.DefaultConfigWithDriver("sqlite"))
+	profile := table.NewDefaultTable(ctx, table.DefaultConfigWithDriver("sqlite"))
 
 	info := profile.GetInfo().HideFilterArea()
 	info.AddField("ID", "id", db.Int).FieldFilterable()

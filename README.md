@@ -27,32 +27,6 @@ GO111MODULE=on go run .
 
 visit: [http://localhost:9033/admin](http://localhost:9033/admin)
 
-## use gopath
-
-To use go path, you should set GO111MODULE=off first.
-
-### step 1
-
-```shell
-git clone https://github.com/GoAdminGroup/example.git
-```
-
-### step 2
-
-```shell
-go get github.com/kardianos/govendor
-cd example
-govendor sync
-```
-
-### step 3
-
-```shell
-go run .
-```
-
-visit: [http://localhost:9033/admin](http://localhost:9033/admin)
-
 ## use docker
 
 ### step 1

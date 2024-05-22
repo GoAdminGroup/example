@@ -2,6 +2,7 @@ package pages
 
 import (
 	"fmt"
+
 	"github.com/GoAdminGroup/go-admin/context"
 	"github.com/GoAdminGroup/go-admin/modules/config"
 	"github.com/GoAdminGroup/go-admin/plugins/admin/modules/paginator"
@@ -14,7 +15,7 @@ import (
 
 func GetTableContent(ctx *context.Context) (types.Panel, error) {
 
-	comp := template.Get(config.GetTheme())
+	comp := template.Get(ctx, config.GetTheme())
 
 	table := comp.DataTable().
 		SetInfoList([]map[string]types.InfoItem{
@@ -48,7 +49,7 @@ func GetTableContent(ctx *context.Context) (types.Panel, error) {
 			return true, "ok", nil
 		})))
 
-	btns, btnsJs := allBtns.Content()
+	btns, btnsJs := allBtns.Content(ctx)
 	table = table.SetButtons(btns).SetActionJs(btnsJs)
 
 	cbs := make(types.Callbacks, 0)
@@ -64,7 +65,7 @@ func GetTableContent(ctx *context.Context) (types.Panel, error) {
 			SetNoPadding().
 			SetHeader(table.GetDataTableHeader()).
 			WithHeadBorder().
-			SetFooter(paginator.Get(paginator.Config{
+			SetFooter(paginator.Get(ctx, paginator.Config{
 				Size:         50,
 				PageSizeList: []string{"10", "20", "30", "50"},
 				Param:        parameter.GetParam(ctx.Request.URL, 10),
