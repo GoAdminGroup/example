@@ -1,0 +1,198 @@
+
+# 配置将在应用第一次启动时写入到数据库的数据表 goadmin_site 中。后续启动将优先从 goadmin_site
+# 中进行加载配置，如果希望修改，可以点击网站右上角配置中心入口进入修改。
+
+# 数据库设置，支持配置多个数据库，目前支持的数据库驱动为：sqlite/mssql/mysql/postgresql
+# 默认数据库连接名为default，框架中可以通过自定义的数据库连接名获取到该连接对象。
+# 在数据表模型中也可以通过指定对应的连接名来获取对应数据。
+database:
+  default:
+    driver: sqlite
+    file: ./admin.db
+
+    # params为驱动需要的额外的传参
+    # params:
+    #   character: utf8mb4
+
+    # 如果设置了DSN，那么以上配置除了Driver都将失效而以配置的DSN为准
+    # dsn: ""
+  bookstore:
+    driver: sqlite
+    file: ./project.db
+
+# 本应用的唯一ID
+app_id: F5sDriver1Ox9segP
+
+# 定义的网站域名，用于cookie认证进行域名限制
+# domain: 
+# 网站语言
+language: cn
+# 全局路由前缀
+prefix: admin
+# UI主题
+theme: sword
+# 文件存储设置，设置上传文件的存储路径以及路由前缀
+store:
+  path: ./uploads
+  prefix: uploads
+
+# 网站标题
+title: GoAdmin
+# 网站LOGO文字，将显示在登录页面以及侧边栏上方，可以为自定义HTML
+logo: GoAdmin
+# 网站LOGO缩小文字，将显示缩小的侧边栏上方，可以为自定义HTML
+mini_logo: GA
+# 首页路由
+index: /
+# 登录路由
+login_url: /login
+
+# 是否为调试模式
+debug: true
+# 开发环境：本地 EnvLocal / 测试 EnvTest / 生产 EnvProd
+env: local
+
+# info日志本地存储路径
+info_log: ./logs/info.log
+# error日志本地存储路径
+error_log: ./logs/error.log
+# access日志本地存储路径
+access_log: ./logs/access.log
+
+# 是否关闭资源访问日志
+# access_assets_log_off: false
+# 是否关闭sql日志
+# sql_log: false
+# 是否关闭access日志
+# access_log_off: false
+# 是否关闭info日志
+# info_log_off: false
+# 是否关闭error日志
+# error_log_off: false
+
+# 颜色主题，当框架主题为adminlte时生效
+# color_scheme: 
+
+# session的时长，单位为秒，默认为两小时。连续不登两小时后需要重新登录。
+session_life_time: 7200
+
+# 资源路由，当使用CDN时，此配置生效
+# asset_url: 
+
+# 文件上传引擎
+file_upload_engine:
+  name: local
+
+# 自定义头部HTML
+# custom_head_html: 
+# 自定义底部HTML
+# custom_foot_html: 
+# 自定义底部信息
+# footer_info: 
+
+# 登录页标题
+# login_title: GoAdmin
+# 登录页Logo
+# login_logo: GoAdmin
+
+# 自定义的用户表
+# auth_user_table: goadmin_users
+
+# 是否不限制多IP登录，如果需要多浏览器登录，请设置为true
+# no_limit_login_ip: false
+
+# 是否关闭网站
+# site_off: false
+
+# 是否隐藏配置中心入口
+# hide_config_center_entrance: false
+# 是否禁止配置修改
+# prohibit_config_modification: false
+# 是否隐藏应用中心入口
+# hide_app_info_entrance: false
+# 是否隐藏工具入口
+# hide_tool_entrance: false
+# 是否隐藏插件中心入口
+# hide_plugin_entrance: false
+
+# 自定义404页面HTML
+# custom_404_html: 
+# 自定义403页面HTML
+# custom_403_html: 
+# 自定义500页面HTML
+# custom_500_html: 
+
+# 是否开放admin api
+# open_admin_api: false
+# 是否隐藏用户中心入口
+# hide_visitor_user_center_entrance: false
+
+# 排除的需要加载的主题组件
+# exclude_theme_components:
+# - ""
+
+# 引导文件的本地路径
+bootstrap_file_path: ./bootstrap.go
+# go.mod文件的本地路径
+go_mod_file_path: ./go.mod
+
+# 是否允许删除操作日志
+allow_del_operation_log: false
+# 是否关闭操作日志
+operation_log_off: false
+
+# 资源文件的本地路径
+# 当选择资源文件分离的主题模式时候需要设置此配置项。
+asset_root_path: ./public/
+
+# URL格式
+# url_format:
+#   info: /info/:__prefix
+#   detail: /info/:__prefix/detail
+#   create: /new/:__prefix
+#   delete: /delete/:__prefix
+#   export: /export/:__prefix
+#   edit: /edit/:__prefix
+#   show_edit: /info/:__prefix/edit
+#   show_create: /info/:__prefix/new
+#   update: /update/:__prefix
+
+# Logger配置用于设置日志记录器的行为和设置。
+# 更多细节：https://pkg.go.dev/go.uber.org/zap
+logger:
+  # Encoder配置用于设置日志编码器的行为和设置。
+  encoder:
+    # 时间键
+    time_key: ts
+    # 级别键
+    level_key: level
+    # 名称键
+    name_key: logger
+    # 调用者键
+    caller_key: caller
+    # 消息键
+    message_key: msg
+    # 堆栈跟踪键
+    stacktrace_key: stacktrace
+    # 级别格式
+    level: capitalColor
+    # 时间格式
+    time: ISO8601
+    # 间隔
+    duration: seconds
+    # 调用者格式
+    caller: short
+    # 编码格式 console/json
+    encoding: console
+
+  # Rotate配置用于设置日志轮转的行为和设置。
+  rotate:
+    # 最大保存时间
+    max_age: 10
+    # 最大保存数量
+    max_backups: 5
+    # 最大大小
+    max_size: 30
+    # 压缩
+    compress: false
+

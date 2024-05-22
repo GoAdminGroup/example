@@ -15,7 +15,7 @@ func GetProfileTable(ctx *context.Context) table.Table {
 
 	profile := table.NewDefaultTable(ctx, table.DefaultConfigWithDriver("sqlite"))
 
-	info := profile.GetInfo().HideFilterArea()
+	info := profile.GetInfo().HideFilterArea().SetFilterFormLayout(form.LayoutFilter)
 	info.AddField("ID", "id", db.Int).FieldFilterable()
 	info.AddField("UUID", "uuid", db.Varchar).FieldCopyable()
 	info.AddField("Pass", "pass", db.Tinyint).FieldBool("1", "0")

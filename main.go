@@ -11,7 +11,7 @@ import (
 
 	_ "github.com/GoAdminGroup/go-admin/adapter/gin"               // web framework adapter
 	_ "github.com/GoAdminGroup/go-admin/modules/db/drivers/sqlite" // sql driver
-	_ "github.com/GoAdminGroup/themes/adminlte"                    // ui theme
+	_ "github.com/GoAdminGroup/themes/sword"                       // ui theme
 
 	"github.com/GoAdminGroup/example/models"
 	"github.com/GoAdminGroup/example/pages"
@@ -55,7 +55,7 @@ func startServer() {
 	//	Language:  language.CN,
 	//}
 
-	if err := eng.AddConfigFromJSON("./config.json").
+	if err := eng.AddConfigFromYAML("./config.yml").
 		AddGenerators(tables.Generators).
 		AddGenerator("external", tables.GetExternalTable).
 		Use(r); err != nil {

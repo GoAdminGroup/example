@@ -13,7 +13,7 @@ func GetExternalTable(ctx *context.Context) (externalTable table.Table) {
 
 	externalTable = table.NewDefaultTable(ctx, table.DefaultConfig())
 
-	info := externalTable.GetInfo()
+	info := externalTable.GetInfo().SetFilterFormLayout(form.LayoutFilter)
 	info.AddField("ID", "id", db.Int).FieldSortable()
 	info.AddField("Title", "title", db.Varchar)
 

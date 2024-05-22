@@ -32,7 +32,7 @@ func GetUserTable(ctx *context.Context) (userTable table.Table) {
 		},
 	})
 
-	info := userTable.GetInfo().SetFilterFormLayout(form.LayoutThreeCol)
+	info := userTable.GetInfo().SetFilterFormLayout(form.LayoutFilter)
 	info.AddField("ID", "id", db.Int).FieldSortable()
 	info.AddField("Name", "name", db.Varchar).FieldEditAble(editType.Text).
 		FieldFilterable(types.FilterType{Operator: types.FilterOperatorLike})

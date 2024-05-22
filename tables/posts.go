@@ -15,7 +15,7 @@ func GetPostsTable(ctx *context.Context) (postsTable table.Table) {
 
 	postsTable = table.NewDefaultTable(ctx, table.DefaultConfigWithDriver("sqlite"))
 
-	info := postsTable.GetInfo()
+	info := postsTable.GetInfo().SetFilterFormLayout(form.LayoutFilter)
 	info.AddField("ID", "id", db.Int).FieldSortable()
 	info.AddField("Title", "title", db.Varchar)
 	info.AddField("AuthorID", "author_id", db.Int).FieldDisplay(func(value types.FieldModel) interface{} {

@@ -18,7 +18,7 @@ func GetAuthorsTable(ctx *context.Context) (authorsTable table.Table) {
 	// connect your custom connection
 	// authorsTable = table.NewDefaultTable(ctx, table.DefaultConfigWithDriverAndConnection("mysql", "admin"))
 
-	info := authorsTable.GetInfo()
+	info := authorsTable.GetInfo().SetFilterFormLayout(form.LayoutFilter)
 	info.AddField("ID", "id", db.Int).FieldSortable()
 	info.AddField("First Name", "first_name", db.Varchar).FieldHide()
 	info.AddField("Last Name", "last_name", db.Varchar).FieldHide()
